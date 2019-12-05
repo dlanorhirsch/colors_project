@@ -52,15 +52,30 @@ container2.appendChild(chip4);
 //--- random color selector ---
 
 mouseToColor = function (e){
-  this.innerText = (e.clientX);
-  this.style.background = `rgb(${e.clientX}, ${e.clientY},255)`; 
+  // console.log("this is:", this.constructor);
+  
+  axisX = Math.ceil((e.offsetX/e.target.clientWidth) * 255);
+  axisY = Math.ceil((e.offsetY/e.target.clientHeight) * 255);
+  axisZ = 128;
+  if(e.ctrlKey){
+    axisZ = Math.ceil((e.offsetY/e.target.clientHeight) * 255);
+  } 
+
+  
+  console.log(axisX, axisY, axisZ);
+  
+  this.innerText = (axisX, axisY, axisZ);
+  this.style.background = `rgb(${axisX}, ${axisY},${axisZ})`;
+  // console.log(`rgb(${e.clientX}, ${e.clientY},255)`);
 };
+
 
 block = document.getElementById("chip4");
 block.handleEvent = mouseToColor;
 pad = document.getElementById("mousePad");
 pad.addEventListener("mousemove", block);
-
+// addEventListener takes an event name and a function or an object with an 
+  // handleEvent property set to a function, to handle the event
 
 //--- chip 1 ---
 var chip1 = document.createElement('div');

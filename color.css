@@ -142,10 +142,11 @@ h1 {
   margin: 0;
 }
 #mousePad {
-  width: 250px;
+  width: 150px;
   height: 150px;
   border: 1px solid black;
   grid-area: 1/3/2/4;
+  color: black;
 }
 #chip4 {
   width: 150px;
