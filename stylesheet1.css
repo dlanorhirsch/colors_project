@@ -8,48 +8,96 @@ body {
 }
 /* ---------- nav-bar -----------*/
 .nav-bar_header {
-  background-color: #cbcbcb;
+  background-color: rgb(55, 55, 55);
+  margin: 0;
+  height: 230px;
+
 }
 ul {
   list-style-type: none;
   padding: 0;
   text-align: right;
   margin-right: 250px;
+  margin-top: 0;
+
 }
 li {
   display: inline;
   margin-left:  30px;
 }
-.logo {
-  text-align: left;
-}
 #main_title {
   text-align: center;
   font-size: 3em;
-  margin: 25px 0 0  0;
+  margin: 30px 0 0 0;
   padding: 0;
+  color: white;
 }
 #sub_title {
   font-size: 2.5em;
   text-align: center;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+a {
+  color: #5dade2;
+
+}
+a:focus {
+  color: darkblue;
+}
+a:hover {
+  color: green;
 }
 /* }--------------dots----------------- */
 #cont1 {
   display: flex;
 }
-.dots--all {
+.dots-all {
   width: 50px;
-  height: 50px;
-  border-radius: 50px;
+  height: 30px;
+
 }
 .c12 {
   background: #ff007f;
-  animation: dotmove 1s;
+  animation: dotmove .5s;
 }
 @keyframes dotmove {
   from{left: 0px;}
   to{left: 800px;}
 }
+/* ------------ Project Description _____________ */
+.pre-container {
+  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+#prod_desc1 {
+  grid-area: 1/2/2/3;
+  margin-top: 20px;
+}
+#prod-desc_detail1 {
+  grid-area: 1/3/2/6;
+  margin-top: 20px;
+}
+#prod-desc_detail2 {
+  grid-area: 2/3/3/6;
+}
+#prod-desc_detail3 {
+  grid-area: 3/3/4/6;
+}
+
+.divider-4 {
+  width: 100%;
+  height: 1px;
+  background-color: gray;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  grid-area: 5/2/6/6;
+}
+
+
 /* ------------------- Event listeners -------------------*/
 #container {
   display: grid;
@@ -135,8 +183,8 @@ li {
   width: 100%;
   height: 1px;
   background-color: gray;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 0;
+  padding: 0;
   grid-area: 5/2/6/6;
 }
 
@@ -147,13 +195,17 @@ li {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     height: 4em;
-    margin-top: 30px;
+    margin-top: 50px;
     padding: 0;
     margin-bottom: 100px;
 }
 #h3-RCS {
   grid-area: 1/2/2/3;
   margin: 0;
+}
+#h3-RCSb {
+  grid-area: 1/2/2/3;
+  margin-top: 20px;
 }
 #mousePad {
   width: 150px;
@@ -179,10 +231,10 @@ li {
 }
 .divider-2 {
   width: 100%;
-  height: 2px;
+  height: 1px;
   background-color: gray;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 0;
+  padding: 0;
   grid-area: 5/2/6/6;
 }
  /* --------------- third container  ------------------- */
@@ -192,22 +244,23 @@ li {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   height: 4em;
-  margin-top: 50px;
+  margin-top: 120px;
   margin-bottom: 50px;
   padding: 0;
 }
-/* #rgb_image {
+#rgb_image {
   grid-area: 1/2/4/3;
   align-self: center;
   justify-content: center;
+  margin: 50px 50px;
+  padding-top: 50px;
   
-} */
+}
 #h3-CP_RGB {
   font-size: 1.2em;
   margin-top: 40px;
   grid-area:  1/2/2/3;
 }
-
 #p1 {
   font-size: 1.0em;
   margin-top: 40px;
@@ -247,16 +300,17 @@ li {
   vertical-align: middle;
   line-height: 100px;
   grid-area: 3/5/4/6;
+  margin-bottom: 20px;
 }
 .divider-3 {
   width: 100%;
   height: 1px;
   background-color: gray;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 0;
+  padding: 0;
   grid-area: 4/2/5/6;
 }
-/* ----------------------------------------------- */
+/* ----------------- Section 4 HSB ------------------------------ */
 
 #container4 {
   display: grid;
@@ -264,12 +318,93 @@ li {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   height: 4em;
-  /* margin-top: 400px; */
+  margin-top: 275px;
   margin-bottom: 50px;
   padding: 0;
 }
 #h3-HSB {
   font-size: 1.2em;
   grid-area:  1/2/2/3;
-  margin-top: 10px;
+}
+#s4-p1 {
+  grid-area: 1/3/2/6;
+}
+#placeholder {
+  grid-area: 5/2/6/3;
+}
+#hsb_image {
+  grid-area: 1/2/2/3;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+.divider-5 {
+  width: 100%;
+  height: 1px;
+  background-color: gray;
+  margin: 0;
+  padding: 0;
+  grid-area: 4/2/5/6;
+}
+/* ----------------- Section 5 HEX ------------------------------ */
+#container5 {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  height: 4em;
+  margin-top: 275px;
+  margin-bottom: 50px;
+  padding: 0;
+}
+#h3-HEX {
+  grid-area: 1/2/2/3;
+ 
+}
+#s5-p1 {
+  grid-area: 1/3/6/6;
+}
+#hex_image {
+  grid-area: 1/2/2/3;
+  margin-top: 60px;
+  margin-left: 30px;
+}
+.divider-6 {
+  width: 100%;
+  height: 1px;
+  background-color: gray;
+  margin: 0;
+  padding: 0;
+  grid-area: 4/2/5/6;
+}
+
+/* ----------------- Section 6 Munsell ------------------------------ */
+#container6 {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  height: 4em;
+  margin-top: 275px;
+
+  margin-bottom: 50px;
+  padding: 0;
+}
+#h3-muns {
+  grid-area: 1/2/2/3;
+}
+#s6-p1 {
+  grid-area: 1/3/2/6;
+}
+#muns_image {
+  grid-area: 1/2/2/3;
+  margin-top: 60px;
+  margin-left: 30px;
+}
+.divider-7 {
+  width: 100%;
+  height: 1px;
+  background-color: gray;
+  margin: 0;
+  padding: 0;
+  grid-area: 4/2/5/6;
 }
