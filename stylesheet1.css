@@ -27,7 +27,7 @@ li {
 }
 #main_title {
   text-align: center;
-  font-size: 3em;
+  font-size: 4em;
   margin: 30px 0 0 0;
   padding: 0;
   color: white;
@@ -71,6 +71,7 @@ a:hover {
   display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    margin-top: 20px;
 
 }
 #prod_desc1 {
