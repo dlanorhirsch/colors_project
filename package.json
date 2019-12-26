@@ -1,0 +1,23 @@
+{
+  "name": "colors_project",
+  "version": "1.0.0",
+  "description": "Colors project for portfolio",
+  "main": "color.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dlanorhirsch/colors_project.git"
+  },
+  "keywords": [
+    "colors",
+    "project"
+  ],
+  "author": "Ron Hirschauer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dlanorhirsch/colors_project/issues"
+  },
+  "homepage": "https://github.com/dlanorhirsch/colors_project#readme"
+}
