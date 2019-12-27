@@ -19,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/dlanorhirsch/colors_project/issues"
   },
-  "homepage": "https://github.com/dlanorhirsch/colors_project#readme"
+  "homepage": "https://github.com/dlanorhirsch/colors_project#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "html": "^1.0.0",
+    "nodemon": "^2.0.2"
+  }
 }
