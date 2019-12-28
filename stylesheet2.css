@@ -20,18 +20,15 @@
   min-width: 60px;
   height: 20px;
   border: 1px solid #373737;
-  margin-bottom
-
 }
-
 #c1 {  
   background: #f3eb00;
   animation-name: fadein;
   animation-duration: 1s;
   animation-timing-function: ease-in;
-  
-  /* animation-delay: 0s; */
 }
+  /* animation-delay: 0s; */
+
 #c2 {
   background: #9fd800;
   animation-name: fadein;

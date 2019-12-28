@@ -1,6 +1,6 @@
 
 
-//------------- circle1 -----------------
+//------------- circle1 ----------------- //
 var circle1 = document.createElement('div');
 circle1.className = "hide1";
 document.getElementById('cm1');
@@ -86,6 +86,7 @@ var textCont1 = document.createTextNode("RED");
 chip1.appendChild(textCont1);
 document.getElementById('container3');
 container3.appendChild(chip1);
+
 
 //--- chip 2 ---
 var chip2 = document.createElement('div');
