@@ -44,6 +44,22 @@ document.getElementById("container");
 container.appendChild(circle3);
 
 // --- chip4 (Random Color Pad)  ---
+// -----------------------------------------------------------------
+
+const btn = document.getElementById("rndColorbtn");
+
+function random(number) {
+  return Math.floor(Math.random() * (number + 1));
+}
+
+function bgChange(e) {
+  const rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+        e.target.style.backgroundColor = rndCol;
+}
+btn.addEventListener('click', bgChange);
+
+
+// ------------------------------------------------------------------
 var chip4 = document.createElement("div");
 chip4.setAttribute("id", "chip4");
 var textCont4 = document.createTextNode("Box 4");

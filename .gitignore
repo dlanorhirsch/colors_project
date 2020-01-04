@@ -31,10 +31,10 @@ Icon?
 ._*
 .Spotlight-V100
 .Trashes
-
+/*.env
 # nodejs npm modules
 /node_modules
-
+/npm-debug.log
 # node-cluster
 /pids
 *.sock

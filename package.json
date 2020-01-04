@@ -15,6 +15,9 @@
     "colors",
     "project"
   ],
+  "engines": {
+    "node": "10.x"
+  },
   "author": "Ron Hirschauer",
   "license": "ISC",
   "bugs": {
