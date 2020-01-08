@@ -68,7 +68,7 @@ a:hover {
   to{left: 800px;}
 }
 /* ------------ Project Description _____________ */
-.pre-container {
+#pre-container {
   display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -124,13 +124,13 @@ a:hover {
 }
 .hide1 {
   background-color: purple;
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  max-width: 100px;
+  height: auto;
   border: 2px black solid;
   border-radius: 50%;
   color: white;
-  font-size: .8em;
-  text-align: center; 
+  vertical-align: center;
   line-height: 75px;
   justify-self: center;
   margin-top: 10px;
@@ -145,8 +145,6 @@ a:hover {
   border: 2px black solid;
   border-radius: 50%;
   color: black;
-  font-size: .8em;
-  text-align: center;
   vertical-align: middle; 
   line-height: 75px;
   justify-self: center;
@@ -161,8 +159,6 @@ a:hover {
   border: 2px black solid;
   border-radius: 50%;
   color: black;
-  font-size: .8em;
-  text-align: center;
   vertical-align: middle; 
   line-height: 75px; 
   justify-self: center;
@@ -401,7 +397,7 @@ a:hover {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   height: 4em;
-  margin-top: 600px;
+  margin-top: 640px;
   margin-bottom: 50px;
   padding: 0;
 }
@@ -490,7 +486,7 @@ a:hover {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   height: 4em;
-  margin-top: 545px;
+  margin-top: 600px;
   margin-bottom: 50px;
   padding: 0;
 }
@@ -562,7 +558,7 @@ a:hover {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   height: 4em;
-  margin-top: 580px;
+  margin-top: 540px;
   margin-bottom: 50px;
   padding: 0;
 }
@@ -574,7 +570,7 @@ a:hover {
 }
 #s6-p2 {
   grid-area: 1/3/2/6;
-  margin-top: 420px;
+  margin-top: 370px;
   margin-left: 75px;
   margin-right: 75px;
 }
@@ -585,8 +581,11 @@ a:hover {
 }
 #muns-image2 {
   grid-area: 1/2/2/3;
-  margin-top: 330px;
+  margin-top: 350px;
   margin-right: 70px;
+}
+#muns-image3 {
+  grid-area: 2/3/5/6;
 }
 
 .divider-7 {
