@@ -1,22 +1,22 @@
-const express = require('express');
-const html = require('html');
-const ejs = require('ejs');
-const bodyParser = require("body-parser");
-const path = require('path');
+import express, { static } from 'express';
+import html from 'html';
+import ejs from 'ejs';
+import { urlencoded } from "body-parser";
+import { join } from 'path';
 
 const app = express();
 app.set('view engine', 'ejs');
-app.use(bodyParser.urlencoded({
+app.use(urlencoded({
   extended: true
   })
 );
 
 var port = process.env.PORT || 8000;
 
-app.use(express.static("public"));
+app.use(static("public"));
 
 app.get('/', function(req, res) {
-  res.sendFile(path.join(__dirname, "index.html"));
+  res.sendFile(join(__dirname, "index.html"));
 });
 
 app.listen(port, function() {
