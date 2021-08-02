@@ -12,8 +12,8 @@ cm1.addEventListener("click", function(){
     }
 });
 
-document.getElementById("container");
-container.appendChild(circle1);
+document.getElementById("container1");
+container1.appendChild(circle1);
 
 //------------- circle2 ------------------
 var circle2 = document.createElement('div');
@@ -26,8 +26,8 @@ cm2.addEventListener("click", function(){
         circle2.className = "hide2";
     }
 });
-document.getElementById("container");
-container.appendChild(circle2);
+document.getElementById("container1");
+container1.appendChild(circle2);
 
 //------------  circle3 -------------------
 var circle3 = document.createElement('div');
@@ -40,8 +40,8 @@ cm3.addEventListener("click", function(){
         circle3.className = "hide3";
     }
 });
-document.getElementById("container");
-container.appendChild(circle3);
+document.getElementById("container1");
+container1.appendChild(circle3);
 
 // --- chip4 (Random Color Pad)  ---
 // -----------------------------------------------------------------
