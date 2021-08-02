@@ -1,3 +1,18 @@
+// ------------ navbar ------------------ //
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function navDropdown() {
+  document.getElementById('dropdown-content').classList.toggle("show");
+}
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropdownBtn')) {
+  var dropdownContent = document.getElementById("dropdown-content");
+    if (dropdownContent.classList.contains('show')) {
+      dropdownContent.classList.remove('show');
+    }
+  }
+}
 
 
 //------------- circle1 ----------------- //
@@ -46,7 +61,7 @@ container1.appendChild(circle3);
 // --- chip4 (Random Color Pad)  ---
 // -----------------------------------------------------------------
 
-const btn = document.getElementById("rndColorbtn");
+const btn = document.getElementById("sqNavbox");
 
 function random(number) {
   return Math.floor(Math.random() * (number + 1));
@@ -62,9 +77,11 @@ btn.addEventListener('click', bgChange);
 // ------------------------------------------------------------------
 var chip4 = document.createElement("div");
 chip4.setAttribute("id", "chip4");
-var textCont4 = document.createTextNode("Box 4");
-chip4.appendChild(textCont4);
+var textCont4 = document.createElement("span");
+textCont4.innerText = "Box 3";
+textCont4.setAttribute("id", "box3");
 document.getElementById("container2");
+container2.appendChild(textCont4);
 container2.appendChild(chip4);
 
 //--- random color selector ---
