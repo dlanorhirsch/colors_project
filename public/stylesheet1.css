@@ -1,528 +1,566 @@
-
-body {
-  padding: 0;
-  font-family: 'Montserrat', sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-/* nav bar */
-#brand {
-  background-color: rgb(0, 0, 0);
-  margin: 0 0 0 4.5em;
-}
-#brand:hover {
-  background-color: rgb(0, 0, 0);
-  color: white;
-}
-nav {
-  background:rgb(2, 2, 206);
-  margin: 0;
-  padding: 0;
-}
-.navbar {
- overflow: hidden;
- background:rgb(2, 2, 206);
- font-family: "Roboto", sans-serif;
-}
-.navbar a {
-  float: left;
-  font-size: 1em;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-.dropdown, .dropDownBtn {
-  cursor: pointer;
-  font-style: 1em;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-  background-color: white;
-  color: rgb(2, 2, 206);
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-.show {
-  display: block;
-}
-
-h3, h4 {
-  font-family: 'Roboto', sans-serif;
-  margin-left: 3.9em;
-  margin-right: 3em;
-}
-#page-title {
-  font-size: 3em;
-  margin-top: 50px;
-}
-#page-subtitle {
-  letter-spacing: .1em;
-  font-size: 1.5em;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  font-weight: bold;
-  
-}
-.h2-alt {
-  margin: .8em 0 1em 3em;
-}
-#page-title, #page-subtitle {
-  text-align: center;
-}
-#section1-header {
-  margin: 1em 0 1em 3em;
+  body {
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
   }
-#section2-header, #section3-header,
-#section4-header, #section5-header,
-#section6-header {
-  font-weight: 500;
-  color:rgb(47, 47, 47);
-  margin: .8em 0 1em 3em;
-}
-
-p {
-  font-family: 'Montserrat', sans-serif;
-  margin: 0 5em 2em 4.5em;
-  line-height: 160%;
-}
-blockquote {
-  padding: 0 7em 0 7em;
-}
-a {
-  color: #5dade2;
-
-}
-a:focus {
-  color: darkblue;
-}
-a:hover {
-  color: green;
-}
-/* ------------ Project Description _____________ */
-
-.divider {
-  height: 4px;
-  background-color: gray;
-  padding: 0;
-  margin: 30px 5em 0 4.5em;
-
-}
-.divider-last {
-  height: 4px;
-  background-color: gray;
-  padding: 0;
-  margin: 50px 5em 200px 4.5em;
-}
-.wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-}
-/* ------------------- Event listeners -------------------*/
-#container1 {
-  display: inline-grid;
-  width: 80%;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  height: 4em;
-  padding: 0;
-}
-
-#para-pel {
-  margin: 0px;
-  font-size: 1em;
-  grid-area: 1/2/2/5; 
-}
-.hide1 {
-  background-color: purple;
-  width: 100%;
-  height: 100px;
-  border: 2px black solid;
-  max-width: 100px;
-  border-radius: 50%;
-  color: white;
-  line-height: 75px;
-  justify-self: center;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  grid-area: 1/2/2/3;
   
-} 
-.hide2 {
-  background-color: yellow;
-  width: 100px;
-  height: 100px;
-  border: 2px black solid;
-  border-radius: 50%;
-  color: black;
-  vertical-align: middle; 
-  line-height: 75px;
-  justify-self: center;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  grid-area: 1/3/2/4;
-}
-.hide3 {
-  background-color: rgb(90, 226, 219);
-  width: 100px;
-  height: 100px;
-  border: 2px black solid;
-  border-radius: 50%;
-  color: black;
-  vertical-align: middle; 
-  line-height: 75px; 
-  justify-self: center;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  grid-area: 1/4/2/5;
-}
-#cm1 {
-  grid-area: 2/2/3/3;
-}
-#cm2 {
-  grid-area: 2/3/3/4;
-}
-#cm3 {
-  grid-area: 2/4/3/5;
-}
-#cm1, #cm2, #cm3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1em;
-  width: 110px;
-  text-align: center;
-  border: 1px solid black;
-  border-radius: 5px;
-  margin: auto;
-}
-/* ------- Color Paradigm: Random Color Selector ----- */
-#container2 {
+  /* nav bar */
+  #brand {
+    background-color: rgb(0, 0, 0);
+    margin: 0 0 0 4.5em;
+  }
+  #brand:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+  }
+  nav {
+    background:rgb(2, 2, 206);
+    margin: 0;
+    padding: 0;
+  }
+  .navbar {
+   overflow: hidden;
+   background:rgb(2, 2, 206);
+   font-family: "Roboto", sans-serif;
+  }
+  .navbar a {
+    float: left;
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  .dropdown, .dropDownBtn {
+    cursor: pointer;
+    font-style: 1em;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: white;
+    color: rgb(2, 2, 206);
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  .show {
+    display: block;
+  }
+  #h2-alt {
+    margin: 30px 0 30px 3em;
+  }
+  h3, h4 {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 3.9em;
+    margin-right: 3em;
+  }
+  #page-title {
+    font-size: 3em;
+    margin-top: 50px;
+  }
+  #page-subtitle {
+    letter-spacing: .1em;
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-weight: bold;
+    
+  }
+
+  #page-title, #page-subtitle {
+    text-align: center;
+  }
+  #section1-header {
+    margin: 1em 0 1em 3em;
+    }
+  #section2-header, #section3-header,
+  #section4-header, #section5-header,
+  #section6-header {
+    font-weight: 500;
+    color:rgb(47, 47, 47);
+    margin: .8em 0 1em 3em;
+  }
+  
+  p {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 5em 2em 4.5em;
+    line-height: 160%;
+  }
+  blockquote {
+    padding: 0 7em 0 7em;
+  }
+  a {
+    color: #5dade2;
+  
+  }
+  a:focus {
+    color: darkblue;
+  }
+  a:hover {
+    color: green;
+  }
+  /* ------------ Project Description _____________ */
+  
+  .divider {
+    height: 4px;
+    background-color: gray;
+    padding: 0;
+    margin: 30px 5em 0 4.5em;
+  
+  }
+  .divider-last {
+    height: 4px;
+    background-color: gray;
+    padding: 0;
+    margin: 50px 5em 200px 4.5em;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+  /* ------------------- Event listeners -------------------*/
+  #container1 {
     display: inline-grid;
+    width: 80%;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 4em;
+    padding: 0;
+  }
+  .hide1 {
+    background-color: purple;
+    width: 100%;
+    height: 100px;
+    border: 2px black solid;
+    border-radius: 50%;
+    max-width: 100px;
+    color: white;
+    vertical-align: middle; 
+    line-height: 75px;
+    justify-self: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    grid-area: 1/1/2/2;
+    
+  } 
+  .hide2 {
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    border: 2px black solid;
+    border-radius: 50%;
+    color: black;
+    vertical-align: middle; 
+    line-height: 75px;
+    justify-self: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    grid-area: 1/2/2/3;
+  }
+  .hide3 {
+    background-color: rgb(90, 226, 219);
+    width: 100px;
+    height: 100px;
+    border: 2px black solid;
+    border-radius: 50%;
+    color: black;
+    vertical-align: middle; 
+    line-height: 75px; 
+    justify-self: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    grid-area: 1/3/2/4;
+  }
+  #cm1 {
+    grid-area: 2/1/3/2;
+  }
+  #cm2 {
+    grid-area: 2/2/3/3;
+  }
+  #cm3 {
+    grid-area: 2/3/3/4;
+  }
+  #cm1, #cm2, #cm3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    width: 110px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: auto;
+  }
+  /* ------- Color Paradigm: Random Color Selector ----- */
+  #container2 {
+      display: inline-grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      width: 80%;
+      height: 4em;
+      margin-top: 100px;
+      padding: 0;
+      margin-bottom: 50px;
+      align-content: space-evenly;
+      justify-items: center;
+      
+  }
+  #sqNavbox {
+    width: 200px;
+    height: 200px;
+    grid-area: 1/1/2/2;
+  }
+  #mousePad {
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    margin: auto;
+    color: black;
+    grid-area: 1/2/2/3;
+  }
+  #mouse-pad_text {
+    margin: auto;
+    grid-area: 2/2/3/3;
+  }
+  #box3 {
+    grid-area: 2/3/3/4;
+  }
+  #chip4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    border: 2px black solid;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    grid-area: 1/3/2/4;
+  }
+  #box1, #mouse-pad_text, #box3 {
+    text-align: center;
+  }
+  
+   /* --------------- Color Paradigm RGB  ------------------- */
+   #container3 {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     width: 80%;
     height: 4em;
-    margin-top: 100px;
-    padding: 0;
     margin-bottom: 50px;
-    align-content: space-evenly;
+    padding: 0;
+  }
+  #rgb_image {
+    grid-area: 1/1/2/2;
+  }
+  #redColorCode {
+    grid-area: 2/2/3/3;
+    text-align: center; 
+  }
+  #greenColorCode {
+    grid-area: 2/3/3/4;
+    text-align: center; 
+  }
+  #blueColorCode {
+    grid-area: 2/4/3/5;
+    text-align: center; 
+  }
+  #chip1, #chip2, #chip3 {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  #chip1 {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    background-color: #ff0000;
+    border: 2px solid black;
+    color: white;
+    grid-area: 1/2/2/3;
+  }
+  #chip2 {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    background-color:rgb(0, 255, 0);
+    border: 2px solid black;
+    color: white;
+    grid-area:  1/3/2/4;  
+  }
+  #chip3 {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    background-color: #0000ff;
+    border: 2px solid black;
+    color: white;
+    grid-area: 1/4/2/5;
+  
+  }
+  /* ----------------- Section 4 HSB ------------------------------ */
+  #container4 {
+    display: grid;
+    max-width: 70%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 10px;
+    margin: 0 auto;
+  }
+  .wrapper-img {
+    grid-area: 1/1/2/2;
+  }
+  .wrapper-circle1 {
+    grid-area: 1/2/2/3;
+  }
+  #hsbCircle1 {
+    border-radius: 50%;
+    width: 100%;
+    padding-bottom: 100%;
+    background: rgb(255, 0, 0);
+  }
+  .wrapper-circle2 {
+    grid-area: 1/3/2/4;
+  }
+  #hsbCircle2 {
+    border-radius: 50%;
+    width: 100%;
+    padding-bottom: 100%;
+    background: hsl(120, 100%, 50%);
+  }
+  .wrapper-circle3 {
+    grid-area: 1/4/2/5;
+  }
+  .wrapper-circle3 {
+    border-radius: 50%;
+    width: 100%;
+    padding-bottom: 100%;
+    background: rgb(0, 0, 255);
+  }
+  #hsbCodeRed, #hsbCodeGreen, #hsbCodeBlue {
+    text-align: center;
+
+  }
+  #hsbCodeRed {
+    grid-area: 2/2/3/3;
+  }
+  #hsbCodeGreen {
+    grid-area: 2/3/3/4;
+  }
+  #hsbCodeBlue {
+    grid-area: 2/4/3/5;
+  }
+
+
+  /* ----------------- Section 5 HEX ------------------------------ */
+  #container5 {
+    display: grid;
+    max-width: 80%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 4em;
+    margin-top: 20px;
+    margin-bottom: 110px;
+    padding: 0;
+  }
+  
+  #h3-HEX {
+    grid-area: 1/2/2/3;
+   
+  }
+  #s5-p1 {
+    grid-area: 1/3/2/6;
+  }
+  #hex_image {
+    grid-area: 1/1/2/2;
+  
+  }
+  #hexCirc1, #hexCirc2, #hexCirc3 {
+    display: flex;
+    text-align: center;
+    margin: 0;
+    padding: 12px;
+  }
+  #hexCirc1 {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #f00;
+    border: 1px solid black;
+    color: white;
+    grid-area: 1/2/2/3;
+  
+  }
+  #hexCirc2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #0f0;
+    border: 1px solid black;
+    color: white;
+    grid-area: 1/3/2/4;
+  }
+  #hexCirc3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #00f;
+    border: 1px solid black;
+    color: white;
+    grid-area: 1/4/2/5;
+  }
+
+  /* ----------------- Section 6 Munsell ------------------------------ */
+  
+  #container6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 0;
+    padding: 0;
+    width: 80%;
     justify-items: center;
     
-}
-#sqNavbox {
-  width: 200px;
-  height: 200px;
-  grid-area: 1/1/2/2;
-}
-#mousePad {
-  justify-content: center;
-  align-items: center;
-  width: 150px;
-  height: 150px;
-  border: 1px solid black;
-  margin: auto;
-  color: black;
-  grid-area: 1/2/2/3;
-}
-#mouse-pad_text {
-  margin: auto;
-  grid-area: 2/2/3/3;
-}
-#box3 {
-  grid-area: 2/3/3/4;
-}
-#chip4 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  width: 200px;
-  height: 200px;
-  background-color: blue;
-  border: 2px black solid;
-  color: white;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 100px;
-  grid-area: 1/3/2/4;
-}
-#box1, #mouse-pad_text, #box3 {
-  text-align: center;
-}
-
- /* --------------- Color Paradigm RGB  ------------------- */
- #container3 {
-  display: inline-grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  width: 80%;
-  height: 4em;
-  margin-bottom: 50px;
-  padding: 0;
-}
-#rgb_image {
-  display: flex;
-  justify-content: flex-end;
-  padding: 10px 0 0 2em;
-  grid-area: 1/1/2/2;
-}
-#redColorCode {
-  grid-area: 2/2/3/3;
-  text-align: center; 
-}
-#greenColorCode {
-  grid-area: 2/3/3/4;
-  text-align: center; 
-}
-#blueColorCode {
-  grid-area: 2/4/3/5;
-  text-align: center; 
-}
-#chip1, #chip2, #chip3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-}
-#chip1 {
-  display: flex;
-  width: 150px;
-  height: 150px;
-  background-color: #ff0000;
-  border: 2px solid black;
-  color: white;
-  grid-area: 1/2/2/3;
-}
-#chip2 {
-  display: flex;
-  width: 150px;
-  height: 150px;
-  background-color:#00ff00;
-  border: 2px solid black;
-  color: white;
-  grid-area:  1/3/2/4;  
-}
-#chip3 {
-  display: flex;
-  width: 150px;
-  height: 150px;
-  background-color: #0000ff;
-  border: 2px solid black;
-  color: white;
-  grid-area: 1/4/2/5;
-
-}
-/* ----------------- Section 4 HSB ------------------------------ */
-
-#container4 {
-  display: inline-grid;
-  max-width: 80%;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  height: 4em;
-  justify-items: center;
-  padding: 0;
-}
-#h3-HSB {
-  font-size: 1.2em;
-  grid-area:  1/2/2/3;
-}
-#s4-p1 {
-  grid-area: 1/3/2/6;
-}
-
-#hsbCirc1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background: #f00;
-  border: 1px solid black;
-  color: white;
-  grid-area: 1/2/2/3;
-
-}
-#hsbCirc2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background: #0f0;
-  border: 1px solid black;
-  color: white;
-  grid-area: 1/3/2/4;
-}
-#hsbCirc3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background: #00f;
-  border: 1px solid black;
-  color: white;
-  grid-area: 1/4/2/5;
-}
-#hsb_image {
-  grid-area: 1/1/2/2;
-
-}
-#hsbCodeRed, #hsbCodeGreen, #hsbCodeBlue {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-}
-#hsbCodeRed {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  grid-area: 2/2/3/3;
-}
-#hsbCodeGreen {
-  grid-area: 2/3/3/4;
-}
-#hsbCodeBlue {
-  grid-area: 2/4/3/5;
-}
-/* ----------------- Section 5 HEX ------------------------------ */
-#container5 {
-  display: grid;
-  max-width: 80%;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  height: 4em;
-  margin-top: 20px;
-  margin-bottom: 50px;
-  padding: 0;
-}
-#h3-HEX {
-  grid-area: 1/2/2/3;
- 
-}
-#s5-p1 {
-  grid-area: 1/3/2/6;
-}
-#hex_image {
-  grid-area: 1/1/2/2;
-
-}
-#hexCirc1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background: #f00;
-  border: 1px solid black;
-  color: white;
-  grid-area: 1/2/2/3;
-
-}
-#hexCirc2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background: #0f0;
-  border: 1px solid black;
-  color: white;
-  grid-area: 1/3/2/4;
-}
-#hexCirc3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background: #00f;
-  border: 1px solid black;
-  color: white;
-  grid-area: 1/4/2/5;
-}
-/* ----------------- Section 6 Munsell ------------------------------ */
-
-#container6 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  margin: 0;
-  padding: 0;
-  width: 80%;
-  justify-items: center;
-  
-}
-#muns_image {
-  grid-area: 1/2/2/3;
-  
-  margin: 0;
-  padding: 0;
-}
-#muns-image2 {
-  grid-area: 1/2/2/3;
-  margin: 0;
-  padding: 0;
-}
-#image2-caption {
-  margin-top: 20px;
-}
-#muns-image3 {
-  display: block;
-  grid-area: 2/1/2/3;
-  text-align: center;
-  margin: 120px 0 0 0;
-  
-}
-#copyright {
-  text-align: center;
-  margin-bottom: 50px;
-}
-@media only screen and (max-width: 481) {
-  #brand {
-    color: red;
   }
-}
+  #muns_image {
+    grid-area: 1/2/2/3;
+    margin: 0;
+    padding: 0;
+  }
+  #muns-image2 {
+    grid-area: 1/2/2/3;
+    margin: 0;
+    padding: 0;
+  }
+  #image2-caption {
+    margin-top: 20px;
+  }
+  #muns-image3 {
+    display: block;
+    grid-area: 2/1/2/3;
+    text-align: center;
+    margin: 120px 0 0 0;
+  }
+  #copyright {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  @media only screen and (max-width: 768px) {
+    #brand {
+      
+      margin: 0 0 0 2.5em;
+    }
+    #h2-alt {
+      margin: 30px 0 30px 2em;
+    }
+    .divider {
+      margin: 30px 3.5em 0 3em;
+    }
+    p {
+      margin:  30px 3.5em 0 3em;
+    }
+    #page-title {
+      font-size: 2.5em;
+    }
+    #page-subtitle {
+      font-size: 1em;
+    }
+    #chip1, #chip2, #chip3 {
+      width: 75%;
+      height: 75%;
+    }
+    #hsbCirc1, #hsbCirc2, #hsbCirc3 {
+      width: 75%;
+      height: 75%;
+    }
+    #hsbCodeRed, #hsbCodeGreen, #hsbCodeBlue {
+      font-size: .8em;
+    }
+    #section2-header, #section3-header,
+    #section4-header, #section5-header,
+    #section6-header {
+
+      color:rgb(47, 47, 47);
+      margin: .8em 0 1em 2em;
+    }
+    #container5 {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    #hexCirc1 {
+      grid-area: 1/2/2/3;
+    }
+    #hsbCodeRed {
+      grid-area: 2/2/3/3;
+    }
+    #hexCirc2 {
+      grid-area: 3/1/4/2;
+    }
+    #hsbCodeGreen {
+      grid-area: 4/1/5/2;
+    }
+    #hexCirc3 {
+      grid-area: 3/2/4/3;
+    }
+    #hsbCodeBlue {
+      grid-area: 4/2/5/3;
+    }
+
+
+  @media only screen and (max-width: 481px) {
+    #brand {
+      color: red;
+    }
+    #chip1, #chip2, #chip3 {
+      font-size: .89em;
+    }
+    .wrapper {
+      margin: 25px 0 0 0;
+    }
+    #redColorCode, #greenColorCode, #blueColorCode {
+      font-size: .7em
+    }
+

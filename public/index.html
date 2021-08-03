@@ -43,7 +43,7 @@
   </div>
   <div class="divider"></div>
 <!-- ---------------------------------------- -->
-  <h2 class="header" id="section1-header">Project Description</h2>
+  <h2 class="header" id="h2-alt">Project Description</h2>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   </p>
@@ -52,7 +52,7 @@
   </p>
 <div class="divider"></div>
 <!-- ---------------------------------- -->
-<h2 class="h2-alt">DOM Manipulation With Javascript</h2>
+<h2 id="h2-alt">DOM Manipulation With Javascript</h2>
 <h2 class="header" id="section2-header">Practice w/Event Listeners</h2>
   <p>
     In this section the DOM is manipulated to create round elements, buttons, and event listeners with standard JavaScript. The button acts as a toggle to show or hide the round elements.
@@ -77,7 +77,7 @@
       <button id="sqNavbox">Click anywhere inside the box.</button>
       <div id="box1">Box 1</div>
       <div id="mousePad"></div>
-      <div id="mouse-pad_text">Box 2 <br> (Hover anywhere inside the box.)</div>
+      <div id="mouse-pad_text">Box 2 <br> (Hover/click anywhere inside the box.)</div>
     <br>
     </div>
   </div>
@@ -85,7 +85,7 @@
   <br>
 <div class="divider"></div>
 <!-- ------------------  RGB ---------------------- -->
-<h2 class="h2-alt">Color Theory</h2>
+<h2 id="h2-alt">Color Theory</h2>
 <a name="rgb"></a>
 <h2 class="header" id="section3-header">Paradigm: Red, Blue, Green - RGB</h2>
 <p>
@@ -100,7 +100,7 @@
 <div class="wrapper">
   <div id="container3">
     <div id="rgb_image">
-      <img src="rgb.png" width=70% alt="tri-color circles">
+      <img src="rgb.png" width="98%" alt="tri-color circles">
     </div>
           
     <div id="redColorCode">rgb = (255, 0, 0)</div>
@@ -118,21 +118,40 @@
   <p>
   HSL (hue, saturation, lightness) and HSV (hue, saturation, value) are alternative representations of the RGB color model, designed in the 1970s by computer graphics researchers to more closely align with the way human vision perceives color-making attributes. In these models, colors of each hue are arranged in a radial slice, around a central axis of neutral colors which ranges from black at the bottom to white at the top. The HSV representation models the way paints of different colors mix together, with the saturation dimension resembling various tints of brightly colored paint, and the value dimension resembling the mixture of those paints with varying amounts of black or white paint. The HSL model attempts to resemble more perceptual color models such as the Natural Color System (NCS) or Munsell color system, placing fully saturated colors around a circle at a lightness value of ​1⁄2, where a lightness value of 0 or 1 is fully black or white, respectively.
  </p>
- <div class="wrapper">
+ <div class="section4-wrapper">
   <div id="container4">
-    <div id="hsbCirc1"></div>
-    <div id="hsbCodeRed">RED:  H: 0°, S: 100%, B: 100%</div>
 
-    <div id="hsbCirc2"></div>
-    <div id="hsbCodeGreen">GREEN:  H: 120°, S: 100%, B: 100%</div>
-
-    <div id="hsbCirc3"></div>
-    <div id="hsbCodeBlue">BLUE:  H: 240°, S: 100%, B: 100%</div>
-
-    <div class="divider-5"></div>
-    <div id="hsb_image"><img src="hsb.png" alt="hsb_model" width=80%></div>
+<!-- img/circles -->
+    <div class="wrapper-img">
+      <img id="hsb_image" 
+           src="hsb.png"
+           alt="hsb_model"
+           width="100%"/>
+    </div>
+    <div class="wrapper-circle1">
+      <div id="hsbCircle1"></div>
+    </div>
+    <div class="wrapper-circle2">
+      <div id="hsbCircle2"></div>
+    </div>
+    <div class="wrapper-circle3">
+      <div id="hsbCircle3"></div>
+    </div>
+<!-- circle labels -->
+    <div id="hsbCodeRed">
+      RED: H: 0°, S: 100%, B: 100%
+    </div>
+    <div id="hsbCodeGreen">
+      GREEN: H: 120°, S: 100%, B: 100%
+    </div>
+    <div id="hsbCodeBlue">
+      BLUE:  H: 240°, S: 100%, B: 100%
+    </div>
   </div>
 </div>
+
+<div class="divider-5"></div>
+
 <br>
 <br>
 <div class="divider"></div>
@@ -155,7 +174,7 @@
     <div id="hsbCodeGreen">GREEN  Hex: #00FF00</div>
 
     <div id="hexCirc3"></div>
-    <div id="hsbCodeBlue">BLUE  Hex: #0000FF</div>    
+    <div id="hsbCodeBlue">BLUE  Hex: #0000FF</div>
   </div>
 </div>
 <br>

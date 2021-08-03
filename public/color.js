@@ -101,7 +101,7 @@ mouseToColor = function (e){
   
   this.innerText = (axisX, axisY, axisZ);
   this.style.background = `rgb(${axisX}, ${axisY},${axisZ})`;
-  // console.log(`rgb(${e.clientX}, ${e.clientY},255)`);
+  console.log(`rgb(${e.clientX}, ${e.clientY},255)`);
 };
 
 
