@@ -148,7 +148,7 @@
   }
   /* ------------------- Event listeners -------------------*/
   #container1 {
-    display: inline-grid;
+    display: grid;
     width: 80%;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -221,24 +221,19 @@
   }
   /* ------- Color Paradigm: Random Color Selector ----- */
   #container2 {
-      display: inline-grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      width: 80%;
-      height: 4em;
-      margin-top: 100px;
-      padding: 0;
-      margin-bottom: 50px;
-      align-content: space-evenly;
-      justify-items: center;
-      
+    display: grid;
+    max-width: 80%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 0 auto;
+    justify-items: center;
   }
   #sqNavbox {
-    width: 200px;
-    height: 200px;
     grid-area: 1/1/2/2;
+    width: 150px;
+    height: 150px;
   }
-  #mousePad {
+  #mouse-pad {
     justify-content: center;
     align-items: center;
     width: 150px;
@@ -248,9 +243,8 @@
     color: black;
     grid-area: 1/2/2/3;
   }
-  #mouse-pad_text {
-    margin: auto;
-    grid-area: 2/2/3/3;
+  #mouse-pad-text {
+    grid-area: 3/2/4/3;
   }
   #box3 {
     grid-area: 2/3/3/4;
@@ -260,8 +254,8 @@
     justify-content: center;
     align-items: center;
     margin: auto;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     background-color: blue;
     border: 2px black solid;
     color: white;
@@ -270,13 +264,10 @@
     line-height: 100px;
     grid-area: 1/3/2/4;
   }
-  #box1, #mouse-pad_text, #box3 {
-    text-align: center;
-  }
   
    /* --------------- Color Paradigm RGB  ------------------- */
    #container3 {
-    display: inline-grid;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     width: 80%;
@@ -309,7 +300,6 @@
     width: 150px;
     height: 150px;
     background-color: #ff0000;
-    border: 2px solid black;
     color: white;
     grid-area: 1/2/2/3;
   }
@@ -318,7 +308,6 @@
     width: 150px;
     height: 150px;
     background-color:rgb(0, 255, 0);
-    border: 2px solid black;
     color: white;
     grid-area:  1/3/2/4;  
   }
@@ -327,7 +316,6 @@
     width: 150px;
     height: 150px;
     background-color: #0000ff;
-    border: 2px solid black;
     color: white;
     grid-area: 1/4/2/5;
   
@@ -341,39 +329,35 @@
     grid-row-gap: 10px;
     margin: 0 auto;
   }
-  .wrapper-img {
+  .wrapper-hsb-img {
     grid-area: 1/1/2/2;
   }
   .wrapper-circle1 {
     grid-area: 1/2/2/3;
   }
-  #hsbCircle1 {
-    border-radius: 50%;
-    width: 100%;
-    padding-bottom: 100%;
-    background: rgb(255, 0, 0);
-  }
   .wrapper-circle2 {
     grid-area: 1/3/2/4;
-  }
-  #hsbCircle2 {
-    border-radius: 50%;
-    width: 100%;
-    padding-bottom: 100%;
-    background: hsl(120, 100%, 50%);
   }
   .wrapper-circle3 {
     grid-area: 1/4/2/5;
   }
-  .wrapper-circle3 {
+  .circle1, .circle2, .circle3 {
     border-radius: 50%;
     width: 100%;
     padding-bottom: 100%;
+  }
+  .circle1 {
+    background: rgb(255, 0, 0);
+  }
+  .circle2 {
+    background: hsl(120, 100%, 50%);
+  }
+  .circle3 {
     background: rgb(0, 0, 255);
   }
+
   #hsbCodeRed, #hsbCodeGreen, #hsbCodeBlue {
     text-align: center;
-
   }
   #hsbCodeRed {
     grid-area: 2/2/3/3;
@@ -384,74 +368,29 @@
   #hsbCodeBlue {
     grid-area: 2/4/3/5;
   }
-
-
   /* ----------------- Section 5 HEX ------------------------------ */
   #container5 {
     display: grid;
-    max-width: 80%;
+    max-width: 70%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    height: 4em;
-    margin-top: 20px;
-    margin-bottom: 110px;
-    padding: 0;
+    grid-column-gap: 40px;
+    grid-row-gap: 10px;
+    margin: 0 auto;
   }
-  
-  #h3-HEX {
-    grid-area: 1/2/2/3;
-   
-  }
-  #s5-p1 {
-    grid-area: 1/3/2/6;
-  }
-  #hex_image {
-    grid-area: 1/1/2/2;
-  
-  }
-  #hexCirc1, #hexCirc2, #hexCirc3 {
-    display: flex;
+  #hexCodeRed, #hexCodeGreen, #hexCodeBlue {
     text-align: center;
-    margin: 0;
-    padding: 12px;
   }
-  #hexCirc1 {
-    display: flex;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background: #f00;
-    border: 1px solid black;
-    color: white;
-    grid-area: 1/2/2/3;
+  #hexCodeRed {
+    grid-area: 2/2/3/3;
+  }
+  #hexCodeGreen {
+    grid-area: 2/3/3/4;
+  }
+  #hexCodeBlue {
+    grid-area: 2/4/3/5;
+  }
+
   
-  }
-  #hexCirc2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background: #0f0;
-    border: 1px solid black;
-    color: white;
-    grid-area: 1/3/2/4;
-  }
-  #hexCirc3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background: #00f;
-    border: 1px solid black;
-    color: white;
-    grid-area: 1/4/2/5;
-  }
 
   /* ----------------- Section 6 Munsell ------------------------------ */
   
@@ -490,7 +429,6 @@
   }
   @media only screen and (max-width: 768px) {
     #brand {
-      
       margin: 0 0 0 2.5em;
     }
     #h2-alt {
@@ -500,13 +438,24 @@
       margin: 30px 3.5em 0 3em;
     }
     p {
-      margin:  30px 3.5em 0 3em;
+      margin:  30px 1.5em 0 3em;
     }
     #page-title {
       font-size: 2.5em;
     }
     #page-subtitle {
       font-size: 1em;
+    }
+    .container2 {
+      width: 90%;
+    }
+    #chip4 {
+      width: 75%;
+      height: 75%;
+    }
+    #mousePad {
+      width: 85%;
+      height: 85%;
     }
     #chip1, #chip2, #chip3 {
       width: 75%;
@@ -540,19 +489,31 @@
       grid-area: 3/1/4/2;
     }
     #hsbCodeGreen {
-      grid-area: 4/1/5/2;
+      grid-area: 2/3/3/4;
     }
     #hexCirc3 {
       grid-area: 3/2/4/3;
     }
     #hsbCodeBlue {
-      grid-area: 4/2/5/3;
+      grid-area: 2/4/3/5;
     }
 
 
   @media only screen and (max-width: 481px) {
     #brand {
       color: red;
+    }
+    #h2-alt {
+      margin-left: 1em;
+    }
+    #section2-header, #section3-header,
+    #section4-header, #section5-header,
+    #section6-header
+    #h2-alt {
+      margin: 1em;
+    }
+    p {
+      margin-left: 1.5em;
     }
     #chip1, #chip2, #chip3 {
       font-size: .89em;
