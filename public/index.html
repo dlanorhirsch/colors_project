@@ -20,7 +20,6 @@
 <body>
   <nav>
     <div class="navbar">
-      <a id="brand">COLOR CHARTS</a>
       <a class="" href="#">Home</a>
       <a class="" href="#">Contact</a>
       <a class="" href="#">About</a>
@@ -53,7 +52,7 @@
 <div class="divider"></div>
 <!-- ---------------------------------- -->
 <h2 id="h2-alt">DOM Manipulation With Javascript</h2>
-<h2 class="header" id="section2-header">Practice w/Event Listeners</h2>
+<h2 class="header" id="section-header">Practice w/Event Listeners</h2>
   <p>
     In this section the DOM is manipulated to create round elements, buttons, and event listeners with standard JavaScript. The button acts as a toggle to show or hide the round elements.
   </p>
@@ -68,7 +67,7 @@
   <br>
 <div class="divider"></div>
 <!-- ---------------------------------------- -->
-<h2 class="header" id="section3-header">Random Color Selector</h2>
+<h2 class="header" id="section-header">Random Color Selector</h2>
   <p>
     DOM manipulation via Javascript is further explored in this section. Square elements were created to demonstrate various Javascript methods. Event listeners and mouse events along with javascript methods were used. Box 1 randomly changes the displayed color dependant upon the mouse click event occurs. Box 2 and box 3 work interactively. Box 2 acts like a mousepad. Box 3 color randomly changes dependant upon the mouse hover location inside box 2.
   </p>
@@ -92,7 +91,7 @@
 <!-- ------------------  RGB ---------------------- -->
 <h2 id="h2-alt">Color Theory</h2>
 <a name="rgb"></a>
-<h2 class="header" id="section3-header">Paradigm: Red, Blue, Green - RGB</h2>
+<h2 class="header" id="section-header">Paradigm: Red, Blue, Green - RGB</h2>
 <p>
   The RGB color model is an additive color model[1] in which red, green, and blue light are added together in various ways to reproduce a broad array of colors. The name of the model comes from the initials of the three additive primary colors, red, green, and blue.
 </p>
@@ -105,13 +104,19 @@
 <div class="wrapper3">
   <div id="container3">
     <div id="rgb_image">
-      <!-- <img src="rgb.png" width="98%" alt="tri-color circles"> -->
+      <img src="rgb.png" width="98%" alt="tri-color circles">
     </div>
           
-    <div id="redColorCode">rgb = (255, 0, 0)</div>
-    <div id="greenColorCode">rgb = (0, 255, 0)</div>
-    <div id="blueColorCode">rgb = (0, 0, 255)</div>
-    <br>
+    <div id="redColorCode">Red
+      <div>rgb(255, 0, 0)</div>
+    </div>
+    <div id="greenColorCode">Green
+      <div>rgb(0, 255, 0)</div>
+    </div>
+    <div id="blueColorCode">Blue
+      <div>rgb(0, 0, 255))</div>
+    </div>
+
   </div>
 </div>
 <br>
@@ -119,17 +124,17 @@
 <div class="divider"></div>
 <!-- -----------  HSB -------------------------- -->
 <a name="hsb"></a>
-<h2 class="header" id="section4-header">Paradigm: Hue, Saturation, Brightness - HSB</h2>
+<h2 class="header" id="section-header">Paradigm: Hue, Saturation, Brightness - HSB</h2>
   <p>
   HSL (hue, saturation, lightness) and HSV (hue, saturation, value) are alternative representations of the RGB color model, designed in the 1970s by computer graphics researchers to more closely align with the way human vision perceives color-making attributes. In these models, colors of each hue are arranged in a radial slice, around a central axis of neutral colors which ranges from black at the bottom to white at the top. The HSV representation models the way paints of different colors mix together, with the saturation dimension resembling various tints of brightly colored paint, and the value dimension resembling the mixture of those paints with varying amounts of black or white paint. The HSL model attempts to resemble more perceptual color models such as the Natural Color System (NCS) or Munsell color system, placing fully saturated colors around a circle at a lightness value of ​1⁄2, where a lightness value of 0 or 1 is fully black or white, respectively.
  </p>
  <div class="wrapper4">
     <div id="container4">
       <div class="wrapper-hsb-img">
-        <!-- <img id="hsb_image" 
+        <img id="hsb_image" 
              src="hsb.png"
              alt="hsb_model"
-             width="100%"/> -->
+             width="100%"/>
       </div>
       <div class="wrapper-circle1">
         <div id="hsb-circ-1" class="circle1"></div>
@@ -155,13 +160,13 @@
 
 <div></div>
 <a name="hex"></a>
-<h2 class="header" id="section5-header">Paradigm: HEX</h2>
+<h2 class="header" id="section-header">Paradigm: HEX</h2>
   <p>Web colors are colors used in displaying web pages on the World Wide Web, and the methods for describing and specifying those colors. Colors may be specified as an RGB triplet or in hexadecimal format (a hex triplet) or according to their common English names in some cases. A color tool or other graphics software is often used to generate color values. In some uses, hexadecimal color codes are specified with notation using a leading number sign (#).[1][2] A color is specified according to the intensity of its red, green and blue components, each represented by eight bits. Thus, there are 24 bits used to specify a web color within the sRGB gamut, and 16,777,216 colors that may be so specified.</p>
 
   <p>Colors outside the sRGB gamut can be specified in Cascading Style Sheets by making one or more of the red, green and blue components negative or greater than 100%, so the color space is theoretically an unbounded extrapolation of sRGB similar to scRGB.[3] Specifying a non-sRGB color this way requires the RGB() function call; it is impossible with the hexadecimal syntax (and thus impossible in legacy HTML documents that do not use CSS).</p>
 
   <p>The first versions of Mosaic and Netscape Navigator used the X11 color names as the basis for their color lists, as both started as X Window System applications. Web colors have an unambiguous colorimetric definition, sRGB, which relates the chromaticities of a particular phosphor set, a given transfer curve, adaptive whitepoint, and viewing conditions.[4] These have been chosen to be similar to many real-world monitors and viewing conditions, in order to allow rendering to be fairly close to the specified values even without color management. User agents vary in the fidelity with which they represent the specified colors. More advanced user agents use color management to provide better color fidelity; this is particularly important for Web-to-print applications.</p>
-  <div class="section5-wrapper">
+  <div class="wrapper5">
     <div id="container5">
       <div class="wrapper-hex-img">
         <img id="hsb_image" 
@@ -189,7 +194,7 @@
 <div class="divider"></div>
 <!-- ------------- MUNS  ------------------------ -->
 <a name="munsell"></a>
-<h2 class="header" id="section6-header">Paradigm: Munsell</h2>
+<h2 class="header" id="section-header">Paradigm: Munsell</h2>
    <p>
      In colorimetry, the Munsell color system is a color space that specifies colors based on three properties of color: hue, value (lightness), and chroma (color purity). It was created by Professor Albert H. Munsell in the first decade of the 20th century and adopted by the United States Department of Agriculture (USDA) as the official color system for soil research in the 1930s.
     </p>
@@ -209,19 +214,36 @@
         — Albert H. Munsell, “A Pigment Color System and Notation”
       </blockquote>
     </p>
-<wrapper class="wrapper">
+<wrapper class="wrapper6">
 <div id="container6">
-  <div><img id="muns_image" src="munsell-sm.png" alt="muns_model">
-    <figcaption>Munsell Model</figcaption>
+  <div><img id="muns-image1" src="munsell-sm.png" alt="muns_model">
+    <figcaption id="muns-image1-caption">Munsell Model</figcaption>
   </div>
   <div id="muns-image2"><img src="Munsell_1943.png" alt="mun_model2">
-    <figcaption id="image2-caption">Munsell Model, 3D View</figcaption>
+    <figcaption id="muns-image2-caption">Munsell Model, 3D View</figcaption>
   </div>
 
   
 </div>
 </wrapper>
-
+<div class="divider"></div>
+<h2 class="header" id="h2-alt">Definitions</h2>
+<h2 id="section-header">Additive Color</h2>
+<p>
+  Additive color or additive mixing is a property of a color model that predicts the appearance of colors made by coincident component lights, i.e. the perceived color can be predicted by summing the numeric representations of the component colors.[1] Modern formulations of Grassmann's laws[2] describe the additivity in the color perception of light mixtures in terms of algebraic equations. Additive color predicts perception and not any sort of change in the photons of light themselves. These predictions are only applicable in the limited scope of color matching experiments where viewers match small patches of uniform color isolated against a grey or black background.
+</p>
+<p>
+  Additive color models are applied in the design and testing of electronic displays that are used to render realistic images containing diverse sets of color using phosphors that emit light of a limited set of primary colors. Examination with a sufficiently powerful magnifying lens will reveal that each pixel in CRT, LCD, and most other types of color video displays is composed of red, green, and blue light-emitting phosphors which appear as a variety of single colors when viewed from a normal distance.
+</p>
+<p>https://en.wikipedia.org/wiki/Additive_color</p>
+<h2 id="section-header">Subtractive Color</h3>
+<p>
+  Subtractive color or subtractive color mixing predicts the spectral power distribution of light after it passes through successive layers of partially absorbing media. This idealized model is the essential principle of how dyes and inks are used in color printing and photography where the perception of color is elicited after white light passes through microscopic "stacks" of partially absorbing media allowing some wavelengths of light to reach the eye and not others.
+</p>
+<p>
+  The subtractive color mixing model predicts the resultant spectral power distribution of light filtered through overlaid partially absorbing materials on a reflecting or transparent surface. Each layer partially absorbs some wavelengths of light from the illumination spectrum while letting others pass through, resulting in a colored appearance. The resultant spectral power distribution is predicted by sequentially taking the product of the spectral power distributions of the incoming light and transmissivity at each filter.[1]
+</p>
+<p>https://en.wikipedia.org/wiki/Subtractive_color</p>
 <div class="divider-last"></div>
 
 <footer class="footer">

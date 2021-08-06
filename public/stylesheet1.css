@@ -10,10 +10,6 @@
     background-color: rgb(0, 0, 0);
     margin: 0 0 0 4.5em;
   }
-  #brand:hover {
-    background-color: rgb(0, 0, 0);
-    color: white;
-  }
   nav {
     background:rgb(2, 2, 206);
     margin: 0;
@@ -24,6 +20,13 @@
    background:rgb(2, 2, 206);
    font-family: "Roboto", sans-serif;
   }
+  .navbar a:first-child {
+    margin-left: 5em;
+  }
+  .navbar a:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+  }
   .navbar a {
     float: left;
     font-size: 1em;
@@ -31,6 +34,7 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    cursor: pointer;
   }
   .dropdown {
     float: left;
@@ -47,7 +51,8 @@
     font-family: inherit;
     margin: 0;
   }
-  .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  .navbar a:hover, .dropdown:hover,
+  .dropbtn, .dropbtn:focus, .dropdownBtn:hover {
     background-color: white;
     color: rgb(2, 2, 206);
   }
@@ -74,7 +79,7 @@
     display: block;
   }
   #h2-alt {
-    margin: 30px 0 30px 3em;
+    margin: 30px 0 30px 3.6em;
   }
   h3, h4 {
     font-family: 'Roboto', sans-serif;
@@ -91,30 +96,26 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-weight: bold;
-    
   }
-
   #page-title, #page-subtitle {
     text-align: center;
   }
   #section1-header {
     margin: 1em 0 1em 3em;
     }
-  #section2-header, #section3-header,
-  #section4-header, #section5-header,
-  #section6-header {
+  #section-header{
     font-weight: 500;
     color:rgb(47, 47, 47);
-    margin: .8em 0 1em 3em;
+    margin: .8em 0 1em 3.6em;
   }
-  
   p {
     font-family: 'Montserrat', sans-serif;
-    margin: 0 5em 2em 4.5em;
+    margin: 0 5.5em 2em 5.5em;
     line-height: 160%;
   }
   blockquote {
-    padding: 0 7em 0 7em;
+    padding: 1em 5em 1em 5em;
+    line-height: 150%;
   }
   a {
     color: #5dade2;
@@ -132,77 +133,55 @@
     height: 4px;
     background-color: gray;
     padding: 0;
-    margin: 30px 5em 0 4.5em;
-  
+    margin: 30px 5.6em 0 5.6em;
   }
   .divider-last {
     height: 4px;
-    background-color: gray;
+    background-color: rgb(128, 126, 126);
     padding: 0;
-    margin: 50px 5em 200px 4.5em;
+    margin: 50px 5em 50px 4.5em;
   }
   .wrapper1 {
     display: flex;
+    width: 100%;
     justify-content: center;
     align-items: baseline;
-  }
-  .wrapper2 {
-
-    /* justify-content: center;
-    align-items: baseline; */
   }
   /* ------------------- Event listeners -------------------*/
   #container1 {
     display: grid;
-    width: 80%;
+    width: 50%;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 20px;;
+    margin: 0 auto;
     height: 4em;
     padding: 0;
+    justify-content: center;
   }
   .hide1 {
     background-color: purple;
-    width: 100%;
-    height: 100px;
-    border: 2px black solid;
-    border-radius: 50%;
-    max-width: 100px;
-    color: white;
-    vertical-align: middle; 
-    line-height: 75px;
-    justify-self: center;
-    margin-top: 10px;
-    margin-bottom: 20px;
     grid-area: 1/1/2/2;
     
   } 
   .hide2 {
     background-color: yellow;
-    width: 100px;
-    height: 100px;
-    border: 2px black solid;
-    border-radius: 50%;
-    color: black;
-    vertical-align: middle; 
-    line-height: 75px;
-    justify-self: center;
-    margin-top: 10px;
-    margin-bottom: 20px;
     grid-area: 1/2/2/3;
   }
   .hide3 {
     background-color: rgb(90, 226, 219);
-    width: 100px;
-    height: 100px;
+    grid-area: 1/3/2/4;
+  }
+  .hide1, .hide2, .hide3 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-bottom: 100%;
     border: 2px black solid;
     border-radius: 50%;
-    color: black;
     vertical-align: middle; 
-    line-height: 75px; 
     justify-self: center;
     margin-top: 10px;
     margin-bottom: 20px;
-    grid-area: 1/3/2/4;
   }
   #cm1 {
     grid-area: 2/1/3/2;
@@ -218,7 +197,9 @@
     justify-content: center;
     align-items: center;
     font-size: 1em;
+    font-weight: bold;
     width: 110px;
+    height: 25px;
     text-align: center;
     border: 1px solid black;
     border-radius: 5px;
@@ -274,32 +255,20 @@
     padding: 0;
     height: 20px;
   }
-
-  /* #chip4 {
-    align-items: center;
-    margin: auto;
-    width: 150px;
-    height: 150px;
-    background-color: blue;
-    border: 2px black solid;
-    color: white;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 100px;
-    grid-area: 1/3/2/4;
-  } */
   
    /* --------------- Color Paradigm RGB  ------------------- */
+   .wrapper3 {
+     margin-top: 50px;
+   }
    #container3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 30px;
-    grid-row-gap: 10px;
     width: 80%;
     margin: 0 auto;
     padding: 0;
+    align-items: center;
   }
-
   #rgb_image {
     grid-area: 1/1/2/2;
   }
@@ -316,30 +285,27 @@
     text-align: center; 
   }
   #chip1, #chip2, #chip3 {
-    justify-content: center;
-    align-items: center;
-    margin: auto;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-bottom: 100%;
+    border: 2px black solid;
+    vertical-align: middle; 
+    justify-self: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
   #chip1 {
-    display: flex;
-    width: 150px;
-    height: 150px;
     background-color: #ff0000;
     color: white;
     grid-area: 1/2/2/3;
   }
   #chip2 {
-    display: flex;
-    width: 150px;
-    height: 150px;
     background-color:rgb(0, 255, 0);
     color: white;
     grid-area:  1/3/2/4;  
   }
   #chip3 {
-    display: flex;
-    width: 150px;
-    height: 150px;
     background-color: #0000ff;
     color: white;
     grid-area: 1/4/2/5;
@@ -353,6 +319,9 @@
     grid-column-gap: 30px;
     grid-row-gap: 10px;
     margin: 0 auto;
+  }
+  .wrapper4 {
+    margin-top: 50px;
   }
   .wrapper-hsb-img {
     grid-area: 1/1/2/2;
@@ -399,11 +368,14 @@
     grid-area: 2/4/3/5;
   }
   /* ----------------- Section 5 HEX ------------------------------ */
+  .wrapper5 {
+    margin-top: 50px;
+  }
   #container5 {
     display: grid;
     max-width: 80%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 30px;
+    grid-column-gap: 10px;
     grid-row-gap: 10px;
     margin: 0 auto;
   }
@@ -419,22 +391,19 @@
   #hexCodeBlue {
     grid-area: 2/4/3/5;
   }
-
-  
-
-  /* ----------------- Section 6 Munsell ------------------------------ */
+  /* ------------ Section 6 Munsell --------------- */
   
   #container6 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     width: 80%;
     justify-items: center;
-    
   }
-  #muns_image {
+
+  #muns-image1 {
     grid-area: 1/2/2/3;
     margin: 0;
     padding: 0;
@@ -444,18 +413,20 @@
     margin: 0;
     padding: 0;
   }
-  #image2-caption {
-    margin-top: 20px;
-  }
-  #muns-image3 {
-    display: block;
-    grid-area: 2/1/2/3;
+  #muns-image1-caption {
+    margin-top: 15px;
     text-align: center;
-    margin: 120px 0 0 0;
   }
+
+  #muns-image2-caption {
+    margin-top: 70px;
+    text-align: center;
+  }
+
   #copyright {
     text-align: center;
     margin-bottom: 50px;
+    color:rgb(128, 126, 126)
   }
   @media only screen and (max-width: 768px) {
     #brand {
@@ -492,11 +463,6 @@
       width: 75%;
       /* height: auto; */
     }
-
-    #chip1, #chip2, #chip3 {
-      width: 75%;
-      height: 75%;
-    }
     #hsbCirc1, #hsbCirc2, #hsbCirc3 {
       width: 75%;
       height: 75%;
@@ -507,37 +473,28 @@
     #section2-header, #section3-header,
     #section4-header, #section5-header,
     #section6-header {
-
       color:rgb(47, 47, 47);
       margin: .8em 0 1em 2em;
     }
-    #container5 {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
+    blockquote {
+      font-size: .9em;
+      line-height: 150%;
     }
-    #hexCirc1 {
-      grid-area: 1/2/2/3;
+    #muns-image1 {
+      width: 85%;
     }
-    #hsbCodeRed {
-      grid-area: 2/2/3/3;
+    #muns-image2 {
+      width: 85%;
     }
-    #hexCirc2 {
-      grid-area: 3/1/4/2;
-    }
-    #hsbCodeGreen {
-      grid-area: 2/3/3/4;
-    }
-    #hexCirc3 {
-      grid-area: 3/2/4/3;
-    }
-    #hsbCodeBlue {
-      grid-area: 2/4/3/5;
-    }
-
-
+  }
   @media only screen and (max-width: 481px) {
     #brand {
       color: red;
+      margin: 0;
+      font-size: .9em;
+    }
+    .navbar a {
+      padding: 
     }
     #h2-alt {
       margin-left: 1em;
@@ -554,10 +511,7 @@
     #chip1, #chip2, #chip3 {
       font-size: .89em;
     }
-    .wrapper {
-      margin: 25px 0 0 0;
-    }
     #redColorCode, #greenColorCode, #blueColorCode {
       font-size: .7em
     }
-
+  }

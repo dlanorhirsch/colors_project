@@ -9,7 +9,7 @@ window.onclick = function(e) {
   if (!e.target.matches('.dropdownBtn')) {
   var dropdownContent = document.getElementById("dropdown-content");
     if (dropdownContent.classList.contains('show')) {
-      myDropdown.classList.remove('show');
+      dropdownContent.classList.remove('show');
     }
   }
 }
@@ -115,8 +115,6 @@ pad.addEventListener("mousemove", block);
 //--- chip 1 ---
 var chip1 = document.createElement('div');
 chip1.setAttribute("id", "chip1");
-var textCont1 = document.createTextNode("RED");
-chip1.appendChild(textCont1);
 document.getElementById('container3');
 container3.appendChild(chip1);
 
@@ -124,16 +122,12 @@ container3.appendChild(chip1);
 //--- chip 2 ---
 var chip2 = document.createElement('div');
 chip2.setAttribute("id", "chip2");
-var textCont2 = document.createTextNode("GREEN");
-chip2.appendChild(textCont2);
 document.getElementById('container3');
 container3.appendChild(chip2);
 
 //--- chip 3 ---
 var chip3 = document.createElement('div');
 chip3.setAttribute("id", "chip3");
-var textCont3 = document.createTextNode("BLUE");
-chip3.appendChild(textCont3);
 document.getElementById("container3");
 container3.appendChild(chip3);
 
