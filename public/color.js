@@ -9,7 +9,7 @@ window.onclick = function(e) {
   if (!e.target.matches('.dropdownBtn')) {
   var dropdownContent = document.getElementById("dropdown-content");
     if (dropdownContent.classList.contains('show')) {
-      dropdownContent.classList.remove('show');
+      myDropdown.classList.remove('show');
     }
   }
 }
@@ -81,7 +81,7 @@ var textCont4 = document.createElement("span");
 textCont4.innerText = "Box 3";
 textCont4.setAttribute("id", "box3");
 document.getElementById("container2");
-container2.appendChild(textCont4);
+// container2.appendChild(textCont4);
 container2.appendChild(chip4);
 
 //--- random color selector ---
@@ -101,7 +101,7 @@ mouseToColor = function (e){
   
   this.innerText = (axisX, axisY, axisZ);
   this.style.background = `rgb(${axisX}, ${axisY},${axisZ})`;
-  console.log(`rgb(${e.clientX}, ${e.clientY},255)`);
+  // console.log(`rgb(${e.clientX}, ${e.clientY},255)`);
 };
 
 

@@ -141,10 +141,15 @@
     padding: 0;
     margin: 50px 5em 200px 4.5em;
   }
-  .wrapper {
+  .wrapper1 {
     display: flex;
     justify-content: center;
     align-items: baseline;
+  }
+  .wrapper2 {
+
+    /* justify-content: center;
+    align-items: baseline; */
   }
   /* ------------------- Event listeners -------------------*/
   #container1 {
@@ -224,34 +229,53 @@
     display: grid;
     max-width: 80%;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
     margin: 0 auto;
     justify-items: center;
   }
   #sqNavbox {
+    display: flex;
     grid-area: 1/1/2/2;
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    padding-bottom: 100%;
   }
-  #mouse-pad {
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 150px;
+  #mousePad {
+    display: flex;
+    width: 100%;
+    padding-bottom: 100%;
     border: 1px solid black;
-    margin: auto;
     color: black;
     grid-area: 1/2/2/3;
   }
-  #mouse-pad-text {
-    grid-area: 3/2/4/3;
+  #chip4 {
+    display: flex;
+    width: 100%;
+    padding-bottom: 100%;
+    background-color: #0000ff;
+    color: white;
+    grid-area: 1/3/2/4;
+    align-items: center;
+    justify-content: center;
+  }
+  #box1 {
+    grid-area: 2/1/3/2;
+  }
+  #box2 {
+    grid-area: 2/2/3/3;
+    text-align: center;
+  }
+  #box2-instruction {
+    font-size: .8em;
   }
   #box3 {
     grid-area: 2/3/3/4;
   }
-  #chip4 {
-    display: flex;
-    justify-content: center;
+  #box1, #box2, #box3 {
+    margin: 0;
+    padding: 0;
+    height: 20px;
+  }
+
+  /* #chip4 {
     align-items: center;
     margin: auto;
     width: 150px;
@@ -263,18 +287,19 @@
     vertical-align: middle;
     line-height: 100px;
     grid-area: 1/3/2/4;
-  }
+  } */
   
    /* --------------- Color Paradigm RGB  ------------------- */
    #container3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 10px;
     width: 80%;
-    height: 4em;
-    margin-bottom: 50px;
+    margin: 0 auto;
     padding: 0;
   }
+
   #rgb_image {
     grid-area: 1/1/2/2;
   }
@@ -323,22 +348,27 @@
   /* ----------------- Section 4 HSB ------------------------------ */
   #container4 {
     display: grid;
-    max-width: 70%;
+    max-width: 80%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 40px;
+    grid-column-gap: 30px;
     grid-row-gap: 10px;
     margin: 0 auto;
   }
   .wrapper-hsb-img {
     grid-area: 1/1/2/2;
   }
-  .wrapper-circle1 {
+  .wrapper-hex1 {
     grid-area: 1/2/2/3;
   }
-  .wrapper-circle2 {
+  #hex1, #hex2, #hex3 {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+  }
+  .wrapper-hex2 {
     grid-area: 1/3/2/4;
   }
-  .wrapper-circle3 {
+  .wrapper-hex3 {
     grid-area: 1/4/2/5;
   }
   .circle1, .circle2, .circle3 {
@@ -371,9 +401,9 @@
   /* ----------------- Section 5 HEX ------------------------------ */
   #container5 {
     display: grid;
-    max-width: 70%;
+    max-width: 80%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 40px;
+    grid-column-gap: 30px;
     grid-row-gap: 10px;
     margin: 0 auto;
   }
@@ -446,17 +476,23 @@
     #page-subtitle {
       font-size: 1em;
     }
-    .container2 {
-      width: 90%;
+    #container2 {
+      width: 80%;
+      margin-top: 1.5em;
+    }
+    #sqNavbox {
+      width: 75%;
+      padding-bottom: 75%;
+    }
+    #mousePad {
+      width: 75%;
+      /* height: auto; */
     }
     #chip4 {
       width: 75%;
-      height: 75%;
+      /* height: auto; */
     }
-    #mousePad {
-      width: 85%;
-      height: 85%;
-    }
+
     #chip1, #chip2, #chip3 {
       width: 75%;
       height: 75%;
