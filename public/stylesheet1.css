@@ -116,6 +116,7 @@
   blockquote {
     padding: 1em 5em 1em 5em;
     line-height: 150%;
+    font-size: .9em;
   }
   a {
     color: #5dade2;
@@ -428,6 +429,10 @@
     margin-bottom: 50px;
     color:rgb(128, 126, 126)
   }
+  .wrapper6 {
+    width: 95%;
+    font-size: 90%;
+  }
   @media only screen and (max-width: 768px) {
     #brand {
       margin: 0 0 0 2.5em;
@@ -470,14 +475,11 @@
     #hsbCodeRed, #hsbCodeGreen, #hsbCodeBlue {
       font-size: .8em;
     }
-    #section2-header, #section3-header,
-    #section4-header, #section5-header,
-    #section6-header {
+    #section-header {
       color:rgb(47, 47, 47);
       margin: .8em 0 1em 2em;
     }
     blockquote {
-      font-size: .9em;
       line-height: 150%;
     }
     #muns-image1 {
