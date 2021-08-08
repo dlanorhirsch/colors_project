@@ -15,9 +15,7 @@ CSS was applied for styling, including Flex-Box and Grid:
   https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox
   https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
 
-This was a particular challenge because it required reviewing CSS Grid code (alignment, justification, grid templates etc., etc., to both JS created DOM elements and HTML elements and integrating them into a cohesive web-page. The development of this page in ongoing.
+The development of this project is ongoing, future goals include functionality to create color palettes and more.
 
-## To Do:
-- identify source for serving static page
-- outline future development goals
+
 
