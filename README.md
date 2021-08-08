@@ -11,7 +11,7 @@ This project started with practicing [JavaScript](https://developer.mozilla.org/
 
 ELements were dynamically created using Javascript including text nodes, event handlers/listeners, buttons, etc. The HTML file contains the basic structure of the project. 
 
-CSS was applied for styling, including [Flex-Box]https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexboxand and  [Grid]https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
+CSS was applied for styling, including [Flex-Box] https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexboxand and  [Grid] https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
   
   
 
