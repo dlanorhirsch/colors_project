@@ -1,15 +1,10 @@
   body {
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', Arial, sans-serif;
     margin: 0;
     padding: 0;
   }
-  
   /* nav bar */
-  #brand {
-    background-color: rgb(0, 0, 0);
-    margin: 0 0 0 4.5em;
-  }
   nav {
     background:rgb(2, 2, 206);
     margin: 0;
@@ -18,7 +13,7 @@
   .navbar {
    overflow: hidden;
    background:rgb(2, 2, 206);
-   font-family: "Roboto", sans-serif;
+   font-family: "Roboto", Arial, sans-serif;
   }
   .navbar a:first-child {
     margin-left: 5em;
@@ -86,9 +81,18 @@
     margin-left: 3.9em;
     margin-right: 3em;
   }
-  .color-charts-logo {
-    margin: 3em 0 0 0;
-    text-align: center;
+  .svg-container {
+    background: #000;
+  }
+  svg {
+  display: block;
+  margin: auto;
+  padding: 2em 0 0 0;
+  }
+  .sub-header {
+    color: #fff;
+    padding: 0 0 1em 0;
+
   }
   #page-title {
     font-size: 3em;
@@ -157,9 +161,8 @@
     display: grid;
     width: 50%;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 20px;;
+    grid-column-gap: 40px;;
     margin: 0 auto;
-    height: 4em;
     padding: 0;
     justify-content: center;
   }
@@ -179,11 +182,9 @@
   .hide1, .hide2, .hide3 {
     position: relative;
     width: 100%;
-    height: auto;
     padding-bottom: 100%;
     border: 2px black solid;
     border-radius: 50%;
-    vertical-align: middle; 
     justify-self: center;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -438,8 +439,9 @@
     font-size: 90%;
   }
   @media only screen and (max-width: 768px) {
-    #brand {
-      margin: 0 0 0 2.5em;
+    .logo {
+      width: 55%;
+      height: auto;
     }
     #h2-alt {
       margin: 30px 0 30px 2em;
@@ -455,6 +457,9 @@
     }
     #page-subtitle {
       font-size: 1em;
+    }
+    #container1 {
+      margin: 1.5em 0 0 0;
     }
     #container2 {
       width: 80%;
@@ -494,30 +499,54 @@
     }
   }
   @media only screen and (max-width: 481px) {
-    #brand {
-      color: red;
-      margin: 0;
-      font-size: .9em;
+    .logo {
+      width: 65%;
     }
-    .navbar a {
-      padding: 
-    }
-    #h2-alt {
+     #h2-alt {
       margin-left: 1em;
+      font-size: 1.3em;
+    }
+    #container1 {
+      width: 10%;
+      grid-column-gap: 20px;
+    }
+    #rgb_image {
+      width: 100%;
+    }
+    #hsb_image {
+      width: 100%;
+    }
+    #section-header {
+      font-size: 1.2em;
+      margin: 1em;
     }
     #section2-header, #section3-header,
     #section4-header, #section5-header,
     #section6-header
     #h2-alt {
-      margin: 1em;
+      margin: .7em;
     }
     p {
       margin-left: 1.5em;
+      font-size: .9em;
     }
     #chip1, #chip2, #chip3 {
       font-size: .89em;
     }
+    .wrapper3 {
+      margin: 25px 0 0 0;
+    }
     #redColorCode, #greenColorCode, #blueColorCode {
       font-size: .7em
+    }
+    .divider {
+      margin: 1em 1.5em 0 1.5em;
+
+    }
+    blockquote {
+      padding: 1em 1em 1em 1em;
+      line-height: 150%;
+      font-size: .8em;
+      font-weight: bold;
     }
   }
