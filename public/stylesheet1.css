@@ -439,6 +439,12 @@
     font-size: 90%;
   }
   @media only screen and (max-width: 768px) {
+    .navbar a:first-child {
+      margin-left: 2em;
+    }
+    .navbar a {
+      padding: 14px 10px;
+    }
     .logo {
       width: 55%;
       height: auto;
