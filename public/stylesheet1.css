@@ -138,11 +138,14 @@
   }
   /* ------------ Project Description _____________ */
   
-  .divider {
+  .divider, .divider2 {
     height: 4px;
     background-color: gray;
     padding: 0;
     margin: 30px 5.6em 0 5.6em;
+  }
+  .divider2 {
+    margin: 0 5.6em 0 5.6em;
   }
   .divider-last {
     height: 4px;
@@ -154,7 +157,6 @@
     display: flex;
     width: 100%;
     justify-content: center;
-    align-items: baseline;
   }
   /* ------------------- Event listeners -------------------*/
   #container1 {
@@ -204,8 +206,8 @@
     align-items: center;
     font-size: 1em;
     font-weight: bold;
-    width: 110px;
-    height: 25px;
+    min-width: 100%;
+    min-height: 40px;
     text-align: center;
     border: 1px solid black;
     border-radius: 5px;
@@ -455,6 +457,9 @@
     .divider {
       margin: 30px 3.5em 0 3em;
     }
+    .divider2 {
+      margin: 0 3.5em 0 3.5em;
+    }
     p {
       margin:  30px 1.5em 0 3em;
     }
@@ -467,6 +472,11 @@
     #container1 {
       margin: 1.5em 0 0 0;
     }
+    #cm1, #cm2, #cm3 {
+      font-size: .8em;
+      min-height: 30px;
+    }
+
     #container2 {
       width: 80%;
       margin-top: 1.5em;
@@ -513,7 +523,6 @@
       font-size: 1.3em;
     }
     #container1 {
-      width: 10%;
       grid-column-gap: 20px;
     }
     #rgb_image {
@@ -536,6 +545,7 @@
       margin-left: 1.5em;
       font-size: .9em;
     }
+
     #chip1, #chip2, #chip3 {
       font-size: .89em;
     }
@@ -547,7 +557,9 @@
     }
     .divider {
       margin: 1em 1.5em 0 1.5em;
-
+    }
+    .divider2 {
+      margin: 1em 1.5em 0 1.5em;
     }
     blockquote {
       padding: 1em 1em 1em 1em;
