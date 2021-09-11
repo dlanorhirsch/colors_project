@@ -1,5 +1,5 @@
 # colors-charts
-## Exploration of color theory, and DOM manipulation via javascript.
+## Exploration of color theory and DOM manipulation via javascript.
 
 ### Languages used:
 1. HTML 
