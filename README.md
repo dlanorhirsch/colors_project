@@ -1,5 +1,9 @@
 # colors-charts
+<<<<<<< HEAD
 ## Exploration of color theory and DOM manipulation via javascript.
+=======
+## Exploratory project for development purposes.
+>>>>>>> parent of d573137... Update README.md
 
 ### Languages used:
 1. HTML 
