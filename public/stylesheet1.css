@@ -10,46 +10,29 @@
     margin: 0;
     padding: 0;
   }
+  .hirschron-logo {
+    
+    
+  }
   .navbar {
+    display: flex;
    overflow: hidden;
    background:rgb(2, 2, 206);
    font-family: "Roboto", Arial, sans-serif;
   }
-  .navbar a:first-child {
+  /* .navbar a:first-child {
+    margin-left: 5em;
+  } */
+  .dropdownBtn {
+    overflow: hidden;
     margin-left: 5em;
   }
-  .navbar a:hover {
-    background-color: rgb(0, 0, 0);
-    color: white;
-  }
-  .navbar a {
-    float: left;
-    font-size: 1em;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    cursor: pointer;
-  }
   .dropdown {
-    float: left;
-    overflow: hidden;
-  }
-  .dropdown, .dropDownBtn {
     cursor: pointer;
-    font-style: 1em;
     border: none;
     outline: none;
     color: white;
     padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-  }
-  .navbar a:hover, .dropdown:hover,
-  .dropbtn, .dropbtn:focus, .dropdownBtn:hover {
-    background-color: white;
-    color: rgb(2, 2, 206);
   }
   .dropdown-content {
     display: none;
@@ -76,10 +59,13 @@
   #h2-alt {
     margin: 30px 0 30px 3.6em;
   }
-  h3, h4 {
+  h3 {
     font-family: 'Roboto', sans-serif;
     margin-left: 3.9em;
     margin-right: 3em;
+  }
+  h4 {
+    margin-left: 4.5em;
   }
   .svg-container {
     background: #000;
@@ -115,6 +101,9 @@
     font-weight: 500;
     color:rgb(47, 47, 47);
     margin: .8em 0 1em 3.6em;
+  }
+  #section-sub-header {
+    margin-left: 6em;
   }
   p {
     font-family: 'Montserrat', sans-serif;

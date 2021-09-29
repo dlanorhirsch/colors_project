@@ -19,23 +19,18 @@
 <body>
   <nav>
     <div class="navbar">
-      <a class="" href="#">Home</a>
+      <!-- <a class="" href="#">Home</a> -->
         <!-- return to project details page -->
-      <a class="" href="#">Contact</a>
+      <!-- <a class="" href="#">Contact</a> -->
         <!-- link to bottom of hirschro homepage-->
-      <a class="" href="#">About</a>
+      <!-- <a class="" href="#">About</a> -->
         <!-- link to bio-page -->
-      <a class="" href="#definitions">Definitions</a>
+      <!-- <a class="" href="#definitions">Definitions</a> -->
     <div class="dropdown">
-      <div class="dropdownBtn" onclick="navDropdown()">ColorParadigms</div>
-    <div id="dropdown-content" class="dropdown-content">
-      <i class="fa fa-caret-down"></i>
-      <a class="dropdown-item" href="#rgb">RGB</a>
-      <a class="dropdown-item" href="#hsb">HSB</a>
-      <a class="dropdown-item" href="#hex">Hex</a>
-      <a class="dropdown-item" href="#munsell">Munsell</a>
-    </div>
-      
+      <div class="dropdownBtn" onclick="navDropdown()">Color Paradigms</div>
+      <!-- <div>
+        <img class="hirschron-logo" src="images/hirschron-logo-pill-sm.png" width="20%">
+      </div> -->
     </div>
   </nav>
 <div>
@@ -99,7 +94,7 @@
 <!-- ---------------------------------------- -->
 <h2 class="header" id="section-header">Random Color Selector</h2>
   <p>
-    DOM manipulation via Javascript is further explored in this section. Square elements were created to demonstrate various Javascript methods. Event listeners and mouse events along with javascript methods were used. Box 1 randomly changes the displayed color dependant upon the mouse click event occurs. Box 2 and box 3 work interactively. Box 2 acts like a mousepad. Box 3 color randomly changes dependant upon the mouse hover location inside box 2.
+    DOM manipulation via Javascript is further explored in this section. Square elements were created to demonstrate various Javascript methods. Event listeners and mouse events along with javascript methods were used.
   </p>
   <div class="wrapper2">
     <div id="container2">
@@ -123,7 +118,7 @@
 <a name="rgb"></a>
 <h2 class="header" id="section-header">Paradigm: Red, Blue, Green - RGB</h2>
 <p>
-  The RGB color model is an additive color model[1] in which red, green, and blue light are added together in various ways to reproduce a broad array of colors. The name of the model comes from the initials of the three additive primary colors, red, green, and blue.
+  The RGB color model is an additive color model in which red, green, and blue light are added together in various ways to reproduce a broad array of colors. The name of the model comes from the initials of the three additive primary colors, red, green, and blue.
 </p>
 <p>  
   The main purpose of the RGB color model is for the sensing, representation, and display of images in electronic systems, such as televisions and computers, though it has also been used in conventional photography. Before the electronic age, the RGB color model already had a solid theory behind it, based in human perception of colors.
@@ -134,7 +129,7 @@
 <div class="wrapper3">
   <div id="container3">
     <div id="rgb_image">
-      <img src="rgb.png" width="98%" alt="tri-color circles">
+      <img src="images/rgb.png" width="98%" alt="tri-color circles">
     </div>
           
     <div id="redColorCode">Red
@@ -162,7 +157,7 @@
     <div id="container4">
       <div class="wrapper-hsb-img">
         <img id="hsb_image" 
-             src="hsb.png"
+             src="images/hsb.png"
              alt="hsb_model"
              width="100%"/>
       </div>
@@ -190,29 +185,26 @@
 
 <div></div>
 <a name="hex"></a>
-<h2 class="header" id="section-header">Paradigm: HEX</h2>
-  <p>Web colors are colors used in displaying web pages on the World Wide Web, and the methods for describing and specifying those colors. Colors may be specified as an RGB triplet or in hexadecimal format (a hex triplet) or according to their common English names in some cases. A color tool or other graphics software is often used to generate color values. In some uses, hexadecimal color codes are specified with notation using a leading number sign (#).[1][2] A color is specified according to the intensity of its red, green and blue components, each represented by eight bits. Thus, there are 24 bits used to specify a web color within the sRGB gamut, and 16,777,216 colors that may be so specified.</p>
+<h2 class="header" id="section-header">Paradigm: Hexidecimal Color</h2>
+  <p>Web colors are colors used in displaying web pages on the World Wide Web, and the methods for describing and specifying those colors. Colors may be specified as an RGB triplet or in hexadecimal format (a hex triplet) or according to their common English names in some cases. A color tool or other graphics software is often used to generate color values. In some uses, hexadecimal color codes are specified with notation using a leading number sign (#). A color is specified according to the intensity of its red, green and blue components, each represented by eight bits. Thus, there are 24 bits used to specify a web color within the sRGB gamut, and 16,777,216 colors that may be so specified.</p>
 
-  <p>Colors outside the sRGB gamut can be specified in Cascading Style Sheets by making one or more of the red, green and blue components negative or greater than 100%, so the color space is theoretically an unbounded extrapolation of sRGB similar to scRGB.[3] Specifying a non-sRGB color this way requires the RGB() function call; it is impossible with the hexadecimal syntax (and thus impossible in legacy HTML documents that do not use CSS).</p>
-
-  <p>The first versions of Mosaic and Netscape Navigator used the X11 color names as the basis for their color lists, as both started as X Window System applications. Web colors have an unambiguous colorimetric definition, sRGB, which relates the chromaticities of a particular phosphor set, a given transfer curve, adaptive whitepoint, and viewing conditions.[4] These have been chosen to be similar to many real-world monitors and viewing conditions, in order to allow rendering to be fairly close to the specified values even without color management. User agents vary in the fidelity with which they represent the specified colors. More advanced user agents use color management to provide better color fidelity; this is particularly important for Web-to-print applications.</p>
   <div class="wrapper5">
     <div id="container5">
       <div class="wrapper-hex-img">
         <img id="hsb_image" 
-             src="hex.png"
+             src="images/hex.png"
              alt="hex_model"
              width="100%"/>
       </div>
       <div class="wrapper-hex1">
-        <img id="hex1" src="Red.png"/>
+        <img id="hex1" src="images/Red.png"/>
       </div>
       <div class="wrapper-hex2">
-        <img id="hex2" src="Green.png"/>
+        <img id="hex2" src="images/Green.png"/>
         
       </div>
       <div class="wrapper-hex3">
-        <img id="hex3" src="Blue.png"/>
+        <img id="hex3" src="images/Blue.png"/>
       </div>
       <div id="hexCodeRed">RED  Hex: #FF0000</div>
       <div id="hexCodeGreen">GREEN  Hex: #00FF00</div>
@@ -246,46 +238,50 @@
     </p>
 <wrapper class="wrapper6">
 <div id="container6">
-  <div><img id="muns-image1" src="munsell-sm.png" alt="muns_model">
+  <div><img id="muns-image1" src="images/munsell-sm.png" alt="muns_model">
     <figcaption id="muns-image1-caption">Munsell Model</figcaption>
   </div>
-  <div ><img id="muns-image2" src="Munsell_1943.png" alt="mun_model2">
+  <div ><img id="muns-image2" src="images/Munsell_1943.png" alt="mun_model2">
     <figcaption id="muns-image2-caption">Munsell Model, 3D View</figcaption>
   </div>
 
-  
 </div>
 </wrapper>
 <div class="divider"></div>
-<div class="wrapper6">
+<div class="wrapper-6">
+  <h2 class="header" id="section-header">Future Development Considerations</h2>
+  <h3 id="section-sub-header">Gamma</h3>
+  <h3 id="section-sub-header">Gamut</h3>
+  <h3 id="section-sub-header">Web-accessibility: Contrast</h3>
+  <div class="divider"></div>
+
+
+</div>
+<!-- <div class="wrapper7">
   <a name="definitions"></a>
-  <h2 class="header" id="h2-alt">Definitions</h2>
-  <h2 id="section-header">Additive Color</h2>
-  <p>
+  <h3 class="header" id="h2-alt">Definitions</h3>
+  <h4 id="section-header">Additive Color</h4>
+  <blockquote class="definition-text">
     Additive color or additive mixing is a property of a color model  that predicts the appearance of colors made by coincident  component lights, i.e. the perceived color can be predicted by   summing the numeric representations of the component colors.[1]   Modern formulations of Grassmann's laws[2] describe the   additivity in the color perception of light mixtures in terms of  algebraic equations. Additive color predicts perception and not  any sort of change in the photons of light themselves. These   predictions are only applicable in the limited scope of color   matching experiments where viewers match small patches of   uniform color isolated against a grey or black background.
-  </p>
-  <p>
+  </blockquote>
+  <blockquote>
     Additive color models are applied in the design and testing of electronic displays that are used to render realistic images containing diverse sets of color using phosphors that emit light of a limited set of primary colors. Examination with a sufficiently powerful magnifying lens will reveal that each pixel in CRT, LCD, and most other types of color video displays is composed of red, green, and blue light-emitting phosphors which appear as a variety of single colors when viewed from a normal distance.
-  </p>
+  </blockquote>
   <p>
     <a href="https://en.wikipedia.org/wiki/Additive_color">Additive Color: Definition</a>
   </p>
   <h2 id="section-header">Subtractive Color</h3>
-  <p>
+  <p class="definition-text">
     Subtractive color or subtractive color mixing predicts the spectral power distribution of light after it passes through successive layers of partially absorbing media. This idealized model is the essential principle of how dyes and inks are used in color printing and photography where the perception of color is elicited after white light passes through microscopic "stacks" of partially absorbing media allowing some wavelengths of light to reach the eye and not others.
   </p>
-  <p>
+  <p class="definition-text">
     The subtractive color mixing model predicts the resultant spectral power distribution of light filtered through overlaid partially absorbing materials on a reflecting or transparent surface. Each layer partially absorbs some wavelengths of light from the illumination spectrum while letting others pass through, resulting in a colored appearance. The resultant spectral power distribution is predicted by sequentially taking the product of the spectral power distributions of the incoming light and transmissivity at each filter.[1]
-  </p>
+  </p> 
   <p>
     <a href="https://en.wikipedia.org/wiki/Subtractive_color">Subtractive Color: Definition</a>
-  </p>
-<div class="divider"></div>
-<h2 class="header" id="h2-alt">Future Development Considerations</h2>
-  <h2 id="section-header">Flat Design Concepts</h2>
-  <h2 id="section-header">Material Design Concepts</h2>
-  <h2 id="section-header">Web-safe Colors</h2>
-  <div class="divider"></div>
+  </p>-->
+
+
 
 <footer class="footer">
   <div id="copyright">
@@ -295,7 +291,7 @@
         document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()));
       </script>
     </span>
-    Hirschro/ColorCharts: V:1.0
+    Hirschron/ColorCharts: V:1.0
   </div>
 </footer>
 

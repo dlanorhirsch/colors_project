@@ -32,6 +32,7 @@ Icon?
 .Spotlight-V100
 .Trashes
 /*.env
+.vscode/
 # nodejs npm modules
 /node_modules
 /npm-debug.log
