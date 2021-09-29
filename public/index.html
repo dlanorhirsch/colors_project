@@ -27,9 +27,16 @@
         <!-- link to bio-page -->
       <!-- <a class="" href="#definitions">Definitions</a> -->
     <div class="dropdown">
-      <div class="dropdownBtn" onclick="navDropdown()">Color Paradigms</div>
-      <!-- <div>
-        <img class="hirschron-logo" src="images/hirschron-logo-pill-sm.png" width="20%">
+      <div class="dropdownBtn" onclick="navDropdown()">ColorParadigms</div>
+        <div id="dropdown-content" class="dropdown-content">
+          <i class="fa fa-caret-down"></i>
+          <a class="dropdown-item" href="#rgb">RGB</a>
+          <a class="dropdown-item" href="#hsb">HSB</a>
+          <a class="dropdown-item" href="#hex">Hex</a>
+          <a class="dropdown-item" href="#munsell">Munsell</a>
+        </div>
+      <!-- <div id="hirschron-logo">
+        <img src="images/hirschron-logo-pill-sm.png" width="15%">
       </div> -->
     </div>
   </nav>
@@ -186,8 +193,10 @@
 <div></div>
 <a name="hex"></a>
 <h2 class="header" id="section-header">Paradigm: Hexidecimal Color</h2>
-  <p>Web colors are colors used in displaying web pages on the World Wide Web, and the methods for describing and specifying those colors. Colors may be specified as an RGB triplet or in hexadecimal format (a hex triplet) or according to their common English names in some cases. A color tool or other graphics software is often used to generate color values. In some uses, hexadecimal color codes are specified with notation using a leading number sign (#). A color is specified according to the intensity of its red, green and blue components, each represented by eight bits. Thus, there are 24 bits used to specify a web color within the sRGB gamut, and 16,777,216 colors that may be so specified.</p>
+  <p>Web colors are colors used in displaying web pages on the World Wide Web, and the methods for describing and specifying those colors. Colors may be specified as an RGB triplet or in hexadecimal format (a hex triplet) or according to their common English names in some cases. A color tool or other graphics software is often used to generate color values. In some uses, hexadecimal color codes are specified with notation using a leading number sign (#).[1][2] A color is specified according to the intensity of its red, green and blue components, each represented by eight bits. Thus, there are 24 bits used to specify a web color within the sRGB gamut, and 16,777,216 colors that may be so specified.</p>
 
+
+  <p>The first versions of Mosaic and Netscape Navigator used the X11 color names as the basis for their color lists, as both started as X Window System applications. Web colors have an unambiguous colorimetric definition, sRGB, which relates the chromaticities of a particular phosphor set, a given transfer curve, adaptive whitepoint, and viewing conditions.[4] These have been chosen to be similar to many real-world monitors and viewing conditions, in order to allow rendering to be fairly close to the specified values even without color management. User agents vary in the fidelity with which they represent the specified colors. More advanced user agents use color management to provide better color fidelity; this is particularly important for Web-to-print applications.</p>
   <div class="wrapper5">
     <div id="container5">
       <div class="wrapper-hex-img">
