@@ -10,19 +10,27 @@
     margin: 0;
     padding: 0;
   }
-  .hirschron-logo {
-    
-    
+  .svg-container {
+    background: #000;
   }
+  svg {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: auto;
+    padding: 2em 0 0 0;
+  }
+  svg {
+    transform: scale(1);
+  } 
   .navbar {
-    display: flex;
+   display: flex;
    overflow: hidden;
    background:rgb(2, 2, 206);
    font-family: "Roboto", Arial, sans-serif;
+   flex-direction: row;
+   align-items: center;
   }
-  /* .navbar a:first-child {
-    margin-left: 5em;
-  } */
   .dropdownBtn {
     overflow: hidden;
     margin-left: 5em;
@@ -53,8 +61,8 @@
   .dropdown-content a:hover {
     background-color: #ddd;
   }
-  .show {
-    display: block;
+  .hirschron-logo {
+      margin-left: auto;
   }
   #h2-alt {
     margin: 30px 0 30px 3.6em;
@@ -66,14 +74,6 @@
   }
   h4 {
     margin-left: 4.5em;
-  }
-  .svg-container {
-    background: #000;
-  }
-  svg {
-  display: block;
-  margin: auto;
-  padding: 2em 0 0 0;
   }
   .sub-header {
     color: #fff;
@@ -145,6 +145,7 @@
     display: flex;
     width: 100%;
     justify-content: center;
+    
   }
   /* ------------------- Event listeners -------------------*/
   #container1 {
@@ -172,6 +173,7 @@
   .hide1, .hide2, .hide3 {
     position: relative;
     width: 100%;
+    height: auto;
     padding-bottom: 100%;
     border: 2px black solid;
     border-radius: 50%;
@@ -179,6 +181,7 @@
     margin-top: 10px;
     margin-bottom: 20px;
   }
+
   #cm1 {
     grid-area: 2/1/3/2;
   }
@@ -429,6 +432,7 @@
     font-size: 90%;
   }
   @media only screen and (max-width: 768px) {
+
     .navbar a:first-child {
       margin-left: 2em;
     }
