@@ -118,7 +118,8 @@ chip1.setAttribute("id", "chip1");
 document.getElementById('container3');
 container3.appendChild(chip1);
 
-
+// document.getElementById("chip1").setAttribute("style", "transform: scale(-1); max-width: 100%; height: auto;");
+  
 //--- chip 2 ---
 var chip2 = document.createElement('div');
 chip2.setAttribute("id", "chip2");

@@ -17,7 +17,7 @@
 
 </head> 
 <body>
-  <nav>
+  <nav class="nav">
     <div class="navbar">
       <!-- <a class="" href="#">Home</a> -->
         <!-- return to project details page -->
@@ -26,18 +26,20 @@
       <!-- <a class="" href="#">About</a> -->
         <!-- link to bio-page -->
       <!-- <a class="" href="#definitions">Definitions</a> -->
-    <div class="dropdown">
-      <div class="dropdownBtn" onclick="navDropdown()">ColorParadigms</div>
-        <div id="dropdown-content" class="dropdown-content">
-          <i class="fa fa-caret-down"></i>
-          <a class="dropdown-item" href="#rgb">RGB</a>
-          <a class="dropdown-item" href="#hsb">HSB</a>
-          <a class="dropdown-item" href="#hex">Hex</a>
-          <a class="dropdown-item" href="#munsell">Munsell</a>
-        </div>
+      <div class="dropdown">
+        <div class="dropdownBtn" onclick="navDropdown()">ColorParadigms</div>
+        
+          <div id="dropdown-content" class="dropdown-content">
+            <!-- <i class="fa fa-caret-down"></i> -->
+            <a class="show" href="#rgb">RGB</a>
+            <a class="show" href="#hsb">HSB</a>
+            <a class="show" href="#hex">Hex</a>
+            <a class="show" href="#munsell">Munsell</a>
+          </div>
       </div>
-    <div id="hirschron-logo">
-      <a href="https://hirschro.github.io/hirschro-website/"><img src="images/hirschron-logo-pill-sm.png" width="15%"></a>
+      <!-- <div id="hirschron-logo">
+        <a href="https://hirschro.github.io/hirschro-website/"><img src="images/hirschron-logo-pill-sm.png" width="15%"></a>
+      </div> -->
     </div>
   </nav>
 <div class="header-container">
@@ -230,7 +232,7 @@
      In colorimetry, the Munsell color system is a color space that specifies colors based on three properties of color: hue, value (lightness), and chroma (color purity). It was created by Professor Albert H. Munsell in the first decade of the 20th century and adopted by the United States Department of Agriculture (USDA) as the official color system for soil research in the 1930s.
     </p>
     <p>
-      Several earlier color order systems had placed colors into a three-dimensional color solid of one form or another, but Munsell was the first to separate hue, value, and chroma into perceptually uniform and independent dimensions, and he was the first to illustrate the colors systematically in three-dimensional space.[1] Munsell's system, particularly the later renotations, is based on rigorous measurements of human subjects' visual responses to color, putting it on a firm experimental scientific basis. Because of this basis in human visual perception, Munsell's system has outlasted its contemporary color models, and though it has been superseded for some uses by models such as CIELAB(L*a*b*) and CIECAM02, it is still in wide use today.[2]
+      Several earlier color order systems had placed colors into a three-dimensional color solid of one form or another, but Munsell was the first to separate hue, value, and chroma into perceptually uniform and independent dimensions, and he was the first to illustrate the colors systematically in three-dimensional space.[1] Munsell's system, particularly the later renotations, is based on rigorous measurements of human subjects' visual responses to color, putting it on a firm experimental scientific basis. Because of this basis in human visual perception, Munsell's system has outlasted its contemporary color models, and though it has been superseded for some uses by models such as CIELAB(L*a*b*) and CIECAM02, it is still in wide use today.
     </p>
     <p>
       The system consists of three independent properties of color which can be represented cylindrically in three dimensions as an irregular color solid:
