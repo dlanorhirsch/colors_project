@@ -17,31 +17,43 @@
 
 </head> 
 <body>
-  <nav class="nav">
+  <a name="top"></a>
+  <ul>
+    <li class="dropdown">
+      <div class="dropbtn">Color Paradigms</div>
+      <div class="dropdown-content">
+        <a href="#rgb">RGB</a>
+        <a href="#hsb">HSB</a>
+        <a href="#hex">HEX</a>
+        <a href="#munsell">Munsell</a>
+      </div>
+    </li>
+  </ul>
+    </div>
+
+
+  <!-- <nav class="nav">
     <div class="navbar">
-      <!-- <a class="" href="#">Home</a> -->
-        <!-- return to project details page -->
-      <!-- <a class="" href="#">Contact</a> -->
-        <!-- link to bottom of hirschro homepage-->
-      <!-- <a class="" href="#">About</a> -->
-        <!-- link to bio-page -->
-      <!-- <a class="" href="#definitions">Definitions</a> -->
-      <div class="dropdown">
-        <div class="dropdownBtn" onclick="navDropdown()">ColorParadigms</div>
-        
+      <a class="" href="#">Home</a>
+        return to project details page
+      <a class="" href="#">Contact</a>
+        link to bottom of hirschro homepage
+      <a class="" href="#">About</a>
+        link to bio-page
+      <a class="" href="#definitions">Definitions</a>
+      <div class="dropdown"></div>
+        <div class="dropdownBtn" onmouseover="navDropdown()">ColorParadigms</div>
           <div id="dropdown-content" class="dropdown-content">
-            <!-- <i class="fa fa-caret-down"></i> -->
-            <a class="show" href="#rgb">RGB</a>
             <a class="show" href="#hsb">HSB</a>
             <a class="show" href="#hex">Hex</a>
             <a class="show" href="#munsell">Munsell</a>
-          </div>
-      </div>
+          </div> -->
+      
       <!-- <div id="hirschron-logo">
         <a href="https://hirschro.github.io/hirschro-website/"><img src="images/hirschron-logo-pill-sm.png" width="15%"></a>
       </div> -->
-    </div>
-  </nav>
+   
+  <!-- </nav> -->
 <div class="header-container">
   <div class="svg-container">
 <svg width="453" height="234" viewBox="0 0 453 234" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -87,7 +99,7 @@
 <div class="divider"></div>
 <!-- ---------------------------------- -->
 <h2 id="h2-alt">DOM Manipulation With Javascript</h2>
-<h2 class="header" id="section-header">Practice w/Event Listeners</h2>
+<h2 class="header" id="section-header">Event Listeners</h2>
   <p>
     In this section the DOM is manipulated to create round elements, buttons, and event listeners with standard JavaScript.
   </p>
@@ -126,7 +138,12 @@
 <!-- ------------------  RGB ---------------------- -->
 <h2 id="h2-alt">Color Theory</h2>
 <a name="rgb"></a>
-<h2 class="header" id="section-header">Paradigm: Red, Blue, Green - RGB</h2>
+<h2 class="header" id="section-header">Paradigm: Red, Blue, Green - RGB
+  <a href="#top">
+    <img id="topIcon" src="/public/images/top-icon.png">
+  </a>
+</h2>
+
 <p>
   The RGB color model is an additive color model in which red, green, and blue light are added together in various ways to reproduce a broad array of colors.
 </p>
@@ -159,7 +176,11 @@
 <div class="divider"></div>
 <!-- -----------  HSB -------------------------- -->
 <a name="hsb"></a>
-<h2 class="header" id="section-header">Paradigm: Hue, Saturation, Brightness - HSB</h2>
+<h2 class="header" id="section-header">Paradigm: Hue, Saturation, Brightness - HSB
+  <a href="#top">
+    <img id="topIcon" src="/public/images/top-icon.png">
+  </a>
+</h2>
   <p>
   HSL (hue, saturation, lightness) and HSV (hue, saturation, value) are alternative representations of the RGB color model, designed in the 1970s by computer graphics researchers to more closely align with the way human vision perceives color-making attributes. In these models, colors of each hue are arranged in a radial slice, around a central axis of neutral colors which ranges from black at the bottom to white at the top. The HSV representation models the way paints of different colors mix together, with the saturation dimension resembling various tints of brightly colored paint, and the value dimension resembling the mixture of those paints with varying amounts of black or white paint. The HSL model attempts to resemble more perceptual color models such as the Natural Color System (NCS) or Munsell color system, placing fully saturated colors around a circle at a lightness value of ​1⁄2, where a lightness value of 0 or 1 is fully black or white, respectively.
  </p>
@@ -195,7 +216,11 @@
 
 <div></div>
 <a name="hex"></a>
-<h2 class="header" id="section-header">Paradigm: Hexidecimal Color</h2>
+<h2 class="header" id="section-header">Paradigm: Hexidecimal Color
+  <a href="#top">
+    <img id="topIcon" src="/public/images/top-icon.png">
+  </a>
+</h2>
   <p>Web colors are colors used in displaying web pages on the World Wide Web, and the methods for describing and specifying those colors. Colors may be specified as an RGB triplet or in hexadecimal format (a hex triplet) or according to their common English names in some cases. A color tool or other graphics software is often used to generate color values. In some uses, hexadecimal color codes are specified with notation using a leading number sign (#). A color is specified according to the intensity of its red, green and blue components, each represented by eight bits. Thus, there are 24 bits used to specify a web color within the sRGB gamut, and 16,777,216 colors that may be so specified.</p>
 
   <p>Web colors have an unambiguous colorimetric definition, sRGB, which relates the chromaticities of a particular phosphor set, a given transfer curve, adaptive whitepoint, and viewing conditions. These have been chosen to be similar to many real-world monitors and viewing conditions, in order to allow rendering to be fairly close to the specified values even without color management. User agents vary in the fidelity with which they represent the specified colors. More advanced user agents use color management to provide better color fidelity; this is particularly important for Web-to-print applications.</p>
@@ -227,7 +252,11 @@
 <div class="divider"></div>
 <!-- ------------- MUNS  ------------------------ -->
 <a name="munsell"></a>
-<h2 class="header" id="section-header">Paradigm: Munsell</h2>
+<h2 class="header" id="section-header">Paradigm: Munsell
+  <a href="#top">
+    <img id="topIcon" src="/public/images/top-icon.png">
+  </a>
+</h2>
    <p>
      In colorimetry, the Munsell color system is a color space that specifies colors based on three properties of color: hue, value (lightness), and chroma (color purity). It was created by Professor Albert H. Munsell in the first decade of the 20th century and adopted by the United States Department of Agriculture (USDA) as the official color system for soil research in the 1930s.
     </p>

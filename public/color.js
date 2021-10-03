@@ -5,14 +5,14 @@ function navDropdown() {
   document.getElementById('dropdown-content').classList.toggle("show");
 }
 // Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropdownBtn')) {
-  var dropdownContent = document.getElementById("dropdown-content");
-    if (dropdownContent.classList.contains('show')) {
-      dropdownContent.classList.remove('show');
-    }
-  }
-}
+// window.onmouseover = function(e) {
+//   if (!e.target.matches('.dropdownBtn')) {
+//   var dropdownContent = document.getElementById("dropdown-content");
+//     if (dropdownContent.classList.contains('show')) {
+//       dropdownContent.classList.remove('show');
+//     }
+//   }
+
 
 
 //------------- circle1 ----------------- //
