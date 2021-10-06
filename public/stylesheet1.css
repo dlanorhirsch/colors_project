@@ -47,6 +47,7 @@
     background-color: #c4c4c4;
     min-width: 160px;
     z-index: 1;
+    font-size: .9em;
   }
   .dropdown-content a {
     color: #0202ce;
